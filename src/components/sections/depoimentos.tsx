@@ -4,28 +4,28 @@ import Image from 'next/image';
 
 const testimonialsData = [
   {
-    name: 'Maria Silva',
+    name: 'Rafael Costa',
     avatar: 'https://placehold.co/100x100.png',
     quote:
-      'Fiz o recheio de leite ninho e vendi tudo em uma tarde! Lucrei R$280 no primeiro final de semana. As receitas são muito fáceis e deliciosas.',
+      'Sempre fui o cara invisível que as mulheres ignoravam. Depois do Magnetismo Oculto, conquistei não só a garota que eu admirava há 2 anos, mas ela que demonstrou interesse por mim! Hoje tenho várias opções. Realmente funciona!',
   },
   {
-    name: 'Ana Santos',
+    name: 'Lucas Ferreira',
     avatar: 'https://placehold.co/100x100.png',
     quote:
-      'Comecei vendendo para família e hoje tenho uma clientela fiel. O curso pagou-se na primeira semana. O recheio de chocolate belga é o mais vendido!',
+      'Eu tinha zero sucesso com mulheres. Apliquei as técnicas por 2 semanas e já estava saindo com garotas que antes nem me davam bola. Meus amigos ficaram impressionados com a transformação. Virei outro homem!',
   },
   {
-    name: 'Juliana Oliveira',
+    name: 'Gabriel Santos',
     avatar: 'https://placehold.co/100x100.png',
     quote:
-      'Sou mãe solo e precisava de uma renda extra. Com as receitas, consigo fazer R$1.200 por mês trabalhando só nos finais de semana.',
+      'Sempre fui o "amigo" das mulheres. Friendzone era minha casa. Depois do curso, descobri como ser visto como homem de verdade. Semana passada uma ex me procurou perguntando "o que você mudou? Você está diferente".',
   },
   {
-    name: 'Patrícia Mendes',
+    name: 'Bruno Oliveira',
     avatar: 'https://placehold.co/100x100.png',
     quote:
-      'As receitas são um sucesso! Comecei com uma encomenda pequena e hoje faço mais de 20 potes por semana. Obrigada pela oportunidade!',
+      'Cara, isso mudou minha vida! Antes eu travava perto de mulher bonita. Agora eu comando a conversa e elas ficam interessadas. No último fim de semana consegui 3 contatos sem forçar nada. Sou uma nova pessoa!',
   },
 ];
 
@@ -49,7 +49,7 @@ export function DepoimentosSection() {
       </div>
 
       <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-center">
-        Veja o que quem já comprou está dizendo:
+        Vou te mostrar mais alguns depoimentos:
       </h2>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
         {testimonialsData.map((testimonial) => (
