@@ -38,7 +38,7 @@ export function DepoimentosSection() {
           Assista e <span className="text-primary">Descubra</span> Como É Simples Despertar Seu Magnetismo
         </h2>
         <p className="mt-4 max-w-2xl text-lg text-center text-muted-foreground mx-auto">
-          Veja o depoimento real de Rafael, que saiu da friendzone eterna e conquistou a atenção que sempre quis em apenas 14 dias usando o método.
+          Veja o depoimento do Rafael, que saiu da friendzone eterna e conquistou a atenção que sempre quis em menos de 14 dias usando o método.
         </p>
         <div className="mt-8 w-full max-w-2xl mx-auto aspect-video bg-card rounded-lg border border-primary/20 flex items-center justify-center shadow-lg overflow-hidden">
            <iframe
