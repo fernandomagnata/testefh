@@ -17,6 +17,14 @@ const qaItems: QAItem[] = [
   {
     question: "Posso usar em múltiplos dispositivos?",
     answer: "Com certeza. Sua licença permite que você instale и use o produto em todos os seus dispositivos pessoais, em desktop e mobile."
+  },
+  {
+    question: "Em quanto tempo verei resultados?",
+    answer: "Embora os resultados variem para cada indivíduo, muitos de nossos clientes relatam melhorias notáveis em sua confiança e interações sociais dentro das primeiras duas a três semanas após a aplicação consistente das técnicas do curso."
+  },
+  {
+    question: "Este curso funciona para homens tímidos ou introvertidos?",
+    answer: "Absolutamente. O curso foi projetado especificamente para ajudar homens de todos os tipos de personalidade, incluindo tímidos e introvertidos, a desenvolver uma confiança autêntica que não exige que eles mudem quem são, mas sim que aprimorem suas qualidades naturais."
   }
 ];
 
