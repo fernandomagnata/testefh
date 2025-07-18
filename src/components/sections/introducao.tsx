@@ -18,10 +18,10 @@ export function IntroducaoSection() {
       <div className="relative h-80 w-full rounded-xl overflow-hidden shadow-2xl shadow-primary/20">
         <Image
           src="https://placehold.co/600x400.png"
-          alt="Representação abstrata de produtividade"
+          alt="Homem e mulher conversando em um bar"
           layout="fill"
           objectFit="cover"
-          data-ai-hint="abstract technology"
+          data-ai-hint="couple talking"
           className="transform hover:scale-105 transition-transform duration-500 ease-in-out"
         />
       </div>
