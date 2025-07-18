@@ -36,7 +36,7 @@ export function DepoimentosSection() {
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
           Assista e <span className="text-primary">descubra</span> como é fácil começar
         </h2>
-        <div className="mt-8 w-full aspect-video bg-card rounded-lg border border-primary/20 flex items-center justify-center shadow-lg">
+        <div className="mt-8 w-full max-w-2xl mx-auto aspect-video bg-card rounded-lg border border-primary/20 flex items-center justify-center shadow-lg">
            <p className="text-muted-foreground">[Seu Vídeo de Depoimento Aqui]</p>
         </div>
       </div>
