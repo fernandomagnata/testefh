@@ -4,21 +4,21 @@ import { Check, CheckSquare, X, ShieldCheck, CreditCard, MousePointerClick, Tren
 import Link from "next/link";
 
 const caminho1Items = [
-  "Permanecer invisível",
-  "Ser esquecido em reuniões",
-  "Passar despercebido pelas mulheres",
-  "Gastar dinheiro em soluções inúteis",
-  "Envelhecer sem realizar sem conquistar o amor da sua vida",
-  "Morrer se perguntando \"e se...?\"",
+  "Permanecer invisível - Sendo ignorado enquanto outros chamam atenção",
+  "Não conseguir trocar mensagem com aquela mina - Vendo ela responder outros na hora",
+  "Passar despercebido pelas mulheres - Como se você fosse transparente",
+  "Gastar dinheiro em soluções inúteis - Comprando cursos que não funcionam",
+  "Envelhecer sem realizar, sem conquistar o amor da sua vida - Assistindo a vida passar",
+  "Morrer se perguntando \"e se...?\" - Carregando o peso dos arrependimentos",
 ];
 
 const caminho2Items = [
-  "Ativar seu magnetismo",
-  "Ser notado e respeitado",
-  "Atrair a garota que voce tanto gosta",
-  "Desenvolver confiança genuína",
-  "Viver sua melhor versão",
-  "Olhar para trás sem arrependimentos",
+  "Ativar seu magnetismo natural - Fazendo ela te notar sem esforço",
+  "Ser notado e respeitado - Entrando em qualquer ambiente com presença",
+  "Atrair a garota que você tanto gosta - Ela vindo até você naturalmente",
+  "Desenvolver confiança genuína - Que transparece em cada palavra e gesto",
+  "Conquistar a mina dos sonhos - E ter outras interessadas também",
+  "Olhar para trás sem arrependimentos - Sabendo que você viveu intensamente",
 ];
 
 export function FinalCtaSection() {
@@ -73,8 +73,11 @@ export function FinalCtaSection() {
         </Card>
       </div>
 
-      <p className="mt-12 max-w-3xl text-lg text-muted-foreground">
-        Você chegou até aqui porque algo dentro de você sabe que merece mais. Mais respeito, mais atenção, mais oportunidades. A ciência prova: isso não é sorte ou genética. É técnica. É método. É possível. Pare de adiar. Comece agora.
+      <p className="mt-12 max-w-3xl text-lg text-muted-foreground whitespace-pre-line">
+        Você chegou até aqui porque algo dentro de você sabe que merece mais.
+        Mais respeito. Mais atenção. Mais oportunidades.
+        A ciência prova: isso não é sorte ou genética. É técnica. É um método. É possível.
+        Pare de adiar. Comece agora.
       </p>
 
       <h3 className="mt-12 text-2xl font-bold flex items-center justify-center flex-wrap gap-3 text-primary">
@@ -83,7 +86,7 @@ export function FinalCtaSection() {
       </h3>
       
       <Link href="https://www.youtube.com/" target="_blank">
-        <Button size="lg" className="mt-8 h-16 w-full max-w-md font-bold text-2xl bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_35px_hsl(var(--primary))] shadow-[0_0_20px_hsl(var(--primary))] border-2 border-primary/50">
+        <Button size="lg" className="mt-8 h-16 w-full max-w-md font-bold text-2xl bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_35px_hsl(var(--primary))] shadow-[0_0_20px_hsl(var(--primary))] border-2 border-primary/50 rounded-lg">
           QUERO AGORA
         </Button>
       </Link>
