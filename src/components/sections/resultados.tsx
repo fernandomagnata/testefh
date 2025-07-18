@@ -19,7 +19,7 @@ export function ResultadosSection() {
   return (
     <section className="flex flex-col items-center text-center">
       <h2 className="text-3xl md:text-4xl font-bold tracking-tight max-w-4xl">
-        Funciona Mesmo? Veja Você Mesmo. <span className="text-primary">500+ Relatos Reais</span> de Transformação deles tendo resultados com o Magnetismo Oculto, como você pode ver nas imagens abaixo.
+        Funciona Mesmo? Veja Você Mesmo. <span className="text-primary">500+ Relatos de Transformação</span> deles tendo resultados com o Magnetismo Oculto, como você pode ver nas imagens abaixo.
       </h2>
       <div className="mt-12 w-full max-w-5xl">
         <Carousel
