@@ -23,12 +23,17 @@ export function OfertaSection() {
           
           <ul className="mt-10 space-y-4 text-left">
             {includedItems.map((item, index) => (
-              <li key={index} className="flex justify-between items-center text-base border-b border-neutral-700 pb-2">
-                <span className={index === 0 ? "text-primary font-bold" : "text-neutral-200"}>
+              <li key={index} className="flex justify-between items-start text-base border-b border-neutral-700 pb-2">
+                <span className={`flex-1 ${index === 0 ? "text-primary font-bold" : "text-neutral-200"}`}>
                   <span className="text-primary mr-2">•</span>{item.name}
                 </span>
-                <span className={`font-bold ${index === 0 ? 'text-primary' : 'text-neutral-200'}`}>
-                  {item.price}
+                <span className={`font-bold ml-4 text-right ${index === 0 ? 'text-primary' : 'text-neutral-200'}`}>
+                  {item.price.startsWith('R$') ? (
+                    <>
+                      <span>R$</span><br/>
+                      <span className="text-2xl">{item.price.split(' ')[1]}</span>
+                    </>
+                  ) : item.price}
                 </span>
               </li>
             ))}
