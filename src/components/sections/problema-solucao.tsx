@@ -61,7 +61,7 @@ export function ProblemaSolucaoSection() {
           </CardContent>
         </Card>
       </div>
-      <p className="mt-8 text-xl font-semibold text-primary">Pare de ficar só observando. Comece a conversar.</p>
+      <p className="mt-8 text-xl font-semibold text-primary">Pare de ser mais um na multidão. Seja o cara que ela quer conhecer.</p>
     </section>
   );
 }
