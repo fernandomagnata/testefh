@@ -8,7 +8,7 @@ export function BonusSection() {
         Garanta Estes Bônus Exclusivos <span className="text-primary">(Valor: R$147)</span>
       </h2>
       <p className="mt-4 max-w-2xl text-lg text-center text-muted-foreground">
-        Aja agora e você também receberá estes bônus por tempo limitado para acelerar seu sucesso.
+        Adquira agora e você também receberá estes bônus, essa promoção é por tempo limitado para acelerar seu sucesso.
       </p>
       <div className="mt-12 grid md:grid-cols-3 gap-8 w-full">
         <Card className="text-center bg-card/50 border-primary/30 hover:border-primary/60 transition-colors">
