@@ -40,12 +40,10 @@ export function OfertaSection() {
           </ul>
 
           <div className="mt-12">
-            <p className="text-lg text-neutral-400">De <span className="line-through">R$ 1.065,00</span></p>
-            <p className="text-xl mt-1">por 12x de:</p>
+            <p className="text-lg text-neutral-400">De <span className="line-through">R$ 147,00</span></p>
             <p className="text-7xl md:text-8xl font-bold text-primary my-2">
-              R$ 20,37
+              R$ 37,90
             </p>
-            <p className="text-xl text-neutral-300">ou R$ 197,00 à vista</p>
           </div>
 
           <Button 
