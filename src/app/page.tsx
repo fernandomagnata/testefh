@@ -3,6 +3,7 @@ import { IntroducaoSection } from '@/components/sections/introducao';
 import { SituacoesSection } from '@/components/sections/situacoes';
 import { ProblemaSolucaoSection } from '@/components/sections/problema-solucao';
 import { PersuasaoOcultaSection } from '@/components/sections/persuasao-oculta';
+import { ResultadosSection } from '@/components/sections/resultados';
 import { OfertaSection } from '@/components/sections/oferta';
 import { DepoimentosSection } from '@/components/sections/depoimentos';
 import { BonusSection } from '@/components/sections/bonus';
@@ -20,6 +21,7 @@ export default function Home() {
         <SituacoesSection />
         <ProblemaSolucaoSection />
         <PersuasaoOcultaSection />
+        <ResultadosSection />
         <OfertaSection />
         <DepoimentosSection />
         <BonusSection />
