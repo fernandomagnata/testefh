@@ -6,7 +6,7 @@ export function FooterSection() {
       <div className="container mx-auto flex flex-col items-center gap-2 text-center text-sm text-muted-foreground">
         <p>Magnetismo Oculto © 2025 | Todos os Direitos Reservados</p>
         <div className="flex gap-4">
-          <Link href="#" className="hover:text-primary transition-colors">
+          <Link href="/politica-de-privacidade" className="hover:text-primary transition-colors">
             Política de Privacidade
           </Link>
           <Link href="/termos-de-uso" className="hover:text-primary transition-colors">
