@@ -5,10 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const includedItems = [
-  { name: "Magnetismo Oculto", value: "R$ 147" },
-  { name: "Manual de Frases Prontas", value: "R$ 47" },
-  { name: "Guia de Postura Masculina", value: "R$ 67" },
-  { name: "Técnicas Anti-Nervosismo", value: "R$ 33" },
+  { name: "Magnetismo Oculto", value: "R$ 147,00" },
+  { name: "Manual de Frases Prontas", value: "R$ 47,00" },
+  { name: "Guia de Postura Masculina", value: "R$ 67,00" },
+  { name: "Técnicas Anti-Nervosismo", value: "R$ 33,00" },
 ];
 
 export function OfertaSection() {
