@@ -1,92 +1,53 @@
-import Image from "next/image";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Rocket, ShieldCheck, CheckSquare, Package, MessageCircle, Ear, Users, Clapperboard } from "lucide-react";
-import type { OfferFeature } from "@/lib/types";
 
-const modulos: OfferFeature[] = [
-  { name: "MÓDULO 1: FUNDAMENTOS DA PRESENÇA INVISÍVEL", description: "Os 7 pilares da energia magnética, como ativar seu campo de influência, técnicas de respiração e postura." },
-  { name: "MÓDULO 2: LINGUAGEM CORPORAL MAGNÉTICA", description: "Micromovimentos, uso do olhar, gestos de confiança e caminhada de liderança." },
-  { name: "MÓDULO 3: ENERGIA SILENCIOSA", description: "Criar curiosidade, dominar o silêncio estratégico e criar sua assinatura energética pessoal." },
-  { name: "MÓDULO 4: APLICAÇÃO PRÁTICA", description: "Estratégias para trabalho, eventos sociais, relacionamentos e networking." },
-  { name: "MÓDULO 5: CASOS REAIS E TROUBLESHOOTING", description: "20 situações práticas resolvidas, erros comuns e adaptações para diferentes personalidades." },
+const includedItems = [
+    { name: "Aulão de VSM Completo", price: "R$ 497" },
+    { name: "Os 7 Passos Para Reconquistar Qualquer Mulher", price: "R$ 97" },
+    { name: "Como funciona a cabeça das mulheres", price: "R$ 147" },
+    { name: "Como Ser o Homem Ideal para Ela", price: "R$ 127" },
+    { name: "Massagem e Prazer", price: "R$ 197" },
+    { name: "Comunidade V.S.M.", price: "Valor imensurável" },
 ];
-
-const icons = [
-  <Package key="package" className="w-8 h-8 text-primary" />,
-  <MessageCircle key="message" className="w-8 h-8 text-primary" />,
-  <Ear key="ear" className="w-8 h-8 text-primary" />,
-  <Users key="users" className="w-8 h-8 text-primary" />,
-  <Clapperboard key="clapperboard" className="w-8 h-8 text-primary" />,
-];
-
 
 export function OfertaSection() {
   return (
-    <section className="grid lg:grid-cols-2 gap-12 items-start">
-      <div className="flex flex-col gap-6">
-        {modulos.map((modulo, index) => (
-          <Card key={modulo.name} className="bg-card/70 border-primary/20 hover:border-primary/50 transition-colors duration-300 transform hover:-translate-y-1">
-            <CardHeader>
-              <div className="flex items-start gap-4">
-                {icons[index % icons.length]}
-                <CardTitle className="text-xl font-semibold leading-tight">{modulo.name}</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground ml-12">{modulo.description}</p>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+    <section className="flex flex-col items-center text-center bg-black text-white py-16 px-6 rounded-2xl border-2 border-[#ff4f00]/30 shadow-2xl shadow-[#ff4f00]/10">
+      <div className="max-w-2xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight">
+          Qual o valor do investimento?
+        </h2>
+        <p className="mt-4 text-lg text-neutral-300">
+          Acesso ao Aulão de V.S.M. + bônus por menos de um café por dia.
+        </p>
+        
+        <ul className="mt-10 space-y-4 text-left">
+          {includedItems.map((item, index) => (
+            <li key={index} className="flex justify-between items-center text-lg border-b border-neutral-700 pb-2">
+              <span className={index === 0 ? "text-[#ff4f00] font-bold" : "text-neutral-200"}>
+                <span className="text-[#ff4f00] mr-2">•</span>{item.name}
+              </span>
+              <span className={`font-bold ${index === 0 ? 'text-[#ff4f00]' : 'text-neutral-200'}`}>
+                {item.price}
+              </span>
+            </li>
+          ))}
+        </ul>
 
-      <div className="sticky top-16">
-        <Card className="bg-card/80 border-2 border-primary/30 shadow-2xl shadow-primary/20 p-6 md:p-8 text-center flex flex-col items-center">
-            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">O MAGNETISMO OCULTO</h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Valor Total dos Módulos: <span className="line-through">R$ 147</span>
-            </p>
-            <p className="text-lg text-primary font-bold">OFERTA ESPECIAL APENAS HOJE:</p>
-            
-            <div className="my-6 w-full max-w-md">
-                 <Image
-                    src="https://placehold.co/600x400.png"
-                    alt="Produto Magnetismo Oculto"
-                    width={600}
-                    height={400}
-                    data-ai-hint="product bundle ebook"
-                    className="rounded-lg"
-                  />
-            </div>
+        <div className="mt-12">
+          <p className="text-xl text-neutral-400">De <span className="line-through">R$ 1.065,00</span></p>
+          <p className="text-2xl mt-1">por 12x de:</p>
+          <p className="text-7xl md:text-8xl font-bold text-[#ff4f00] my-2">
+            R$ 20,37
+          </p>
+          <p className="text-xl text-neutral-300">ou R$ 197,00 à vista</p>
+        </div>
 
-            <p className="text-lg text-muted-foreground">Apenas</p>
-            <p className="text-6xl md:text-7xl font-bold text-white my-2">R$ 37,90</p>
-            <p className="text-sm text-muted-foreground">Pagamento único. Acesso vitalício ao conteúdo e suporte por e-mail.</p>
-            
-            <p className="max-w-md my-6 text-sm text-muted-foreground">
-                Se a sua autoestima não vale esse valor, então meu caro eu não posso te ajudar. Esse treinamento literalmente não é pra quem não pode dispor dessa quantia...
-            </p>
-
-            <Button size="lg" className="w-full max-w-sm h-14 font-bold text-xl bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50">
-              <Rocket className="w-6 h-6 mr-3" />
-              QUERO AGORA
-            </Button>
-            
-            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
-                    <CheckSquare className="w-4 h-4 text-green-500" />
-                    <span>Acesso Imediato</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <ShieldCheck className="w-4 h-4 text-yellow-400" />
-                    <span>Garantia de 7 Dias</span>
-                </div>
-                <div className="flex items-center gap-2">
-                    <CheckSquare className="w-4 h-4 text-green-500" />
-                    <span>Pagamento Seguro</span>
-                </div>
-            </div>
-        </Card>
+        <Button 
+          size="lg" 
+          className="mt-10 w-full max-w-lg h-16 bg-[#ff4f00] text-black text-xl font-bold rounded-full transition-all duration-300 ease-in-out hover:bg-[#ff6a29] hover:shadow-[0_0_25px_#ff4f00] shadow-[0_0_15px_#ff4f00] border-2 border-[#ff4f00]/50"
+        >
+          QUERO GARANTIR MINHA VAGA AGORA
+        </Button>
       </div>
     </section>
   );
