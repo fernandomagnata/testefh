@@ -35,9 +35,9 @@ const qaItems: QAItem[] = [
 export function PerguntasRespostasSection() {
   return (
     <section className="flex flex-col items-center">
-      <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-center">Perguntas Frequentes</h2>
-      <p className="mt-4 max-w-2xl text-lg text-center text-muted-foreground">
-        Tem perguntas? Nós temos respostas.
+      <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-center">Está com alguma dúvida?</h2>
+      <p className="mt-4 max-w-2xl text-lg text-center text-muted-foreground whitespace-pre-line">
+        Da uma olhada nas perguntas mais frequentes sobre o Magnetismo Oculto:
       </p>
       <div className="mt-12 w-full max-w-3xl">
         <Accordion type="single" collapsible className="w-full">
