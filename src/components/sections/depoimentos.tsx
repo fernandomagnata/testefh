@@ -32,6 +32,15 @@ const testimonialsData = [
 export function DepoimentosSection() {
   return (
     <section className="flex flex-col items-center">
+      <div className="mb-16 text-center w-full max-w-4xl">
+        <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+          Assista e <span className="text-primary">descubra</span> como é fácil começar
+        </h2>
+        <div className="mt-8 w-full aspect-video bg-card rounded-lg border border-primary/20 flex items-center justify-center shadow-lg">
+           <p className="text-muted-foreground">[Seu Vídeo de Depoimento Aqui]</p>
+        </div>
+      </div>
+
       <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-center">
         Veja o que quem já comprou está dizendo:
       </h2>
