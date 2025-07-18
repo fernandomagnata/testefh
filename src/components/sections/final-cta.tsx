@@ -86,10 +86,10 @@ export function FinalCtaSection() {
       </div>
 
       <p className="mt-12 max-w-3xl text-lg text-muted-foreground whitespace-pre-line">
-        Você chegou até aqui porque algo dentro de você sabe que merece mais.
-        Mais respeito. Mais atenção. Mais oportunidades.
-        A ciência prova: isso não é sorte ou genética. É técnica. É um método. É possível.
-        Pare de adiar. Comece agora.
+{`Você chegou até aqui porque algo dentro de você sabe que merece mais.
+Mais respeito. Mais atenção. Mais oportunidades.
+A ciência prova: isso não é sorte ou genética. É técnica. É um método. É possível.
+Pare de adiar.`}
       </p>
 
       <h3 className="mt-12 text-2xl font-bold flex items-center justify-center flex-wrap gap-3 text-primary">
