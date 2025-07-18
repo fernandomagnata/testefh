@@ -56,7 +56,7 @@ export function OfertaSection() {
           <Link href="https://www.youtube.com/" target="_blank">
             <Button 
               size="lg" 
-              className="mt-10 w-full h-14 bg-primary text-primary-foreground text-lg font-bold rounded-lg transition-all duration-300 ease-in-out hover:bg-primary/90 hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50"
+              className="mt-10 h-14 bg-primary text-primary-foreground text-lg font-bold rounded-lg transition-all duration-300 ease-in-out hover:bg-primary/90 hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50"
             >
               EU QUERO
             </Button>
