@@ -9,7 +9,7 @@ export function FooterSection() {
           <Link href="#" className="hover:text-primary transition-colors">
             Política de Privacidade
           </Link>
-          <Link href="#" className="hover:text-primary transition-colors">
+          <Link href="/termos-de-uso" className="hover:text-primary transition-colors">
             Termos de Uso
           </Link>
         </div>
