@@ -1,19 +1,19 @@
 
-import { AberturaSection } from '@/components/sections/abertura';
-import { IntroducaoSection } from '@/components/sections/introducao';
-import { SituacoesSection } from '@/components/sections/situacoes';
-import { ProblemaSolucaoSection } from '@/components/sections/problema-solucao';
-import { PersuasaoOcultaSection } from '@/components/sections/persuasao-oculta';
-import { ResultadosSection } from '@/components/sections/resultados';
-import { ModulosSection } from '@/components/sections/modulos';
-import { OfertaSection } from '@/components/sections/oferta';
-import { DepoimentosSection } from '@/components/sections/depoimentos';
-import { BonusSection } from '@/components/sections/bonus';
-import { PerguntasRespostasSection } from '@/components/sections/perguntas-respostas';
-import { GarantiaSection } from '@/components/sections/garantia';
-import { FinalCtaSection } from '@/components/sections/final-cta';
-import { FooterSection } from '@/components/sections/footer';
-import { FloatingCtaButton } from '@/components/shared/floating-cta-button';
+import { AberturaSection } from '@/app/components/sections/abertura';
+import { IntroducaoSection } from '@/app/components/sections/introducao';
+import { SituacoesSection } from '@/app/components/sections/situacoes';
+import { ProblemaSolucaoSection } from '@/app/components/sections/problema-solucao';
+import { PersuasaoOcultaSection } from '@/app/components/sections/persuasao-oculta';
+import { ResultadosSection } from '@/app/components/sections/resultados';
+import { ModulosSection } from '@/app/components/sections/modulos';
+import { OfertaSection } from '@/app/components/sections/oferta';
+import { DepoimentosSection } from '@/app/components/sections/depoimentos';
+import { BonusSection } from '@/app/components/sections/bonus';
+import { PerguntasRespostasSection } from '@/app/components/sections/perguntas-respostas';
+import { GarantiaSection } from '@/app/components/sections/garantia';
+import { FinalCtaSection } from '@/app/components/sections/final-cta';
+import { FooterSection } from '@/app/components/sections/footer';
+import { FloatingCtaButton } from '@/app/components/shared/floating-cta-button';
 
 export default function Home() {
   return (

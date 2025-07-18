@@ -1,6 +1,6 @@
 
-import { Button } from '@/components/ui/button';
-import { FooterSection } from '@/components/sections/footer';
+import { Button } from '@/app/components/ui/button';
+import { FooterSection } from '@/app/components/sections/footer';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
