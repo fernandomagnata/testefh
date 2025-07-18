@@ -1,11 +1,22 @@
 
+import { Button } from '@/components/ui/button';
 import { FooterSection } from '@/components/sections/footer';
+import { ArrowLeft } from 'lucide-react';
+import Link from 'next/link';
 
 export default function PoliticaDePrivacidadePage() {
   return (
     <div className="flex flex-col items-center min-h-screen">
       <main className="w-full max-w-4xl px-4 md:px-8 flex-grow flex flex-col gap-8 py-16 md:py-24">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-primary mb-6">Política de Privacidade</h1>
+        <div className="flex items-center justify-center relative mb-6">
+          <Link href="/" className="absolute left-0">
+            <Button variant="outline">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Voltar
+            </Button>
+          </Link>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-primary text-center">Política de Privacidade</h1>
+        </div>
         <div className="space-y-8 text-muted-foreground">
           <p>A sua privacidade é de extrema importância para nós. Esta Política de Privacidade descreve como Luminous Sales Page ("nós", "nosso" ou "nossa") coleta, usa, compartilha e protege as suas informações pessoais quando você visita Luminous Sales Page (o "Site"), utiliza os nossos serviços ou interage conosco de qualquer forma.</p>
           <p>Ao utilizar o nosso Site e os nossos serviços, você concorda com a coleta e o uso das suas informações de acordo com esta política.</p>

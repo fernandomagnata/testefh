@@ -1,11 +1,22 @@
 
+import { Button } from '@/components/ui/button';
 import { FooterSection } from '@/components/sections/footer';
+import { ArrowLeft } from 'lucide-react';
+import Link from 'next/link';
 
 export default function TermosDeUsoPage() {
   return (
     <div className="flex flex-col items-center min-h-screen">
       <main className="w-full max-w-4xl px-4 md:px-8 flex-grow flex flex-col gap-8 py-16 md:py-24">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-primary mb-6">Termos de Uso</h1>
+        <div className="flex items-center justify-center relative mb-6">
+            <Link href="/" className="absolute left-0">
+              <Button variant="outline">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Voltar
+              </Button>
+            </Link>
+            <h1 className="text-4xl md:text-5xl font-extrabold text-primary text-center">Termos de Uso</h1>
+        </div>
         <div className="space-y-8 text-muted-foreground">
           <p>Bem-vindo(a) a Luminous Sales Page ("Site"), operado por Luminous Sales Page ("nós", "nosso" ou "nossa"). Estes Termos de Uso ("Termos") regem o seu acesso e uso do nosso Site, produtos e serviços.</p>
           <p>Ao acessar ou usar nosso Site e nossos serviços, você concorda em estar vinculado a estes Termos. Se você não concordar com qualquer parte destes Termos, você não deve acessar o Site ou utilizar nossos serviços.</p>
