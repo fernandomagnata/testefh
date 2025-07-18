@@ -5,6 +5,7 @@ import { SituacoesSection } from '@/components/sections/situacoes';
 import { ProblemaSolucaoSection } from '@/components/sections/problema-solucao';
 import { PersuasaoOcultaSection } from '@/components/sections/persuasao-oculta';
 import { ResultadosSection } from '@/components/sections/resultados';
+import { ModulosSection } from '@/components/sections/modulos';
 import { OfertaSection } from '@/components/sections/oferta';
 import { DepoimentosSection } from '@/components/sections/depoimentos';
 import { BonusSection } from '@/components/sections/bonus';
@@ -24,6 +25,7 @@ export default function Home() {
         <ProblemaSolucaoSection />
         <PersuasaoOcultaSection />
         <ResultadosSection />
+        <ModulosSection />
         <OfertaSection />
         <DepoimentosSection />
         <BonusSection />
