@@ -5,7 +5,7 @@ export function BonusSection() {
   return (
     <section className="flex flex-col items-center">
       <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-center">
-        Garanta Estes Bônus Exclusivos <span className="text-primary">(Valor: R$147)</span>
+        Receba Também Estes Bônus Exclusivos <span className="text-primary">(Valor: R$147)</span>
       </h2>
       <p className="mt-4 max-w-2xl text-lg text-center text-muted-foreground">
         Adquira agora e você também receberá estes bônus, essa promoção é por tempo limitado para acelerar seu sucesso.
