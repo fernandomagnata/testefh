@@ -1,6 +1,7 @@
 import { AberturaSection } from '@/components/sections/abertura';
 import { IntroducaoSection } from '@/components/sections/introducao';
 import { ProblemaSolucaoSection } from '@/components/sections/problema-solucao';
+import { PersuasaoOcultaSection } from '@/components/sections/persuasao-oculta';
 import { OfertaSection } from '@/components/sections/oferta';
 import { DepoimentosSection } from '@/components/sections/depoimentos';
 import { BonusSection } from '@/components/sections/bonus';
@@ -16,6 +17,7 @@ export default function Home() {
         <AberturaSection />
         <IntroducaoSection />
         <ProblemaSolucaoSection />
+        <PersuasaoOcultaSection />
         <OfertaSection />
         <DepoimentosSection />
         <BonusSection />
