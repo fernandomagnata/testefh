@@ -8,11 +8,11 @@ import {
 } from "@/components/ui/carousel";
 
 const images = [
-  { src: "https://placehold.co/400x800.png", alt: "Resultado de aluno 1", hint: "chat screenshot" },
-  { src: "https://placehold.co/400x800.png", alt: "Resultado de aluno 2", hint: "chat screenshot" },
-  { src: "https://placehold.co/400x800.png", alt: "Resultado de aluno 3", hint: "chat screenshot" },
-  { src: "https://placehold.co/400x800.png", alt: "Resultado de aluno 4", hint: "chat screenshot" },
-  { src: "https://placehold.co/400x800.png", alt: "Resultado de aluno 5", hint: "chat screenshot" },
+  { src: "https://placehold.co/400x600.png", alt: "Resultado de aluno 1", hint: "chat screenshot" },
+  { src: "https://placehold.co/400x600.png", alt: "Resultado de aluno 2", hint: "chat screenshot" },
+  { src: "https://placehold.co/400x600.png", alt: "Resultado de aluno 3", hint: "chat screenshot" },
+  { src: "https://placehold.co/400x600.png", alt: "Resultado de aluno 4", hint: "chat screenshot" },
+  { src: "https://placehold.co/400x600.png", alt: "Resultado de aluno 5", hint: "chat screenshot" },
 ];
 
 export function ResultadosSection() {
@@ -31,9 +31,9 @@ export function ResultadosSection() {
         >
           <CarouselContent>
             {images.map((image, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+              <CarouselItem key={index} className="basis-1/2 md:basis-1/3">
                 <div className="p-1">
-                  <div className="relative aspect-[9/16] w-full overflow-hidden rounded-lg">
+                  <div className="relative aspect-[9/14] w-full overflow-hidden rounded-lg">
                     <Image
                       src={image.src}
                       alt={image.alt}
