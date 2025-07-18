@@ -4,21 +4,21 @@ import { Check, CheckSquare, X, ShieldCheck, CreditCard, MousePointerClick, Tren
 import Link from "next/link";
 
 const caminho1Items = [
-  "Permanecer invisível - Sendo ignorado enquanto outros chamam atenção",
-  "Não conseguir trocar mensagem com aquela mina - Vendo ela responder outros na hora",
-  "Passar despercebido pelas mulheres - Como se você fosse transparente",
-  "Gastar dinheiro em soluções inúteis - Comprando cursos que não funcionam",
-  "Envelhecer sem realizar, sem conquistar o amor da sua vida - Assistindo a vida passar",
-  "Morrer se perguntando \"e se...?\" - Carregando o peso dos arrependimentos",
+  "Permanecer invisível - (Sendo ignorado enquanto outros chamam atenção)",
+  "Não conseguir trocar mensagem com aquela mina - (Vendo ela responder outros na hora)",
+  "Passar despercebido pelas mulheres - (Como se você fosse transparente)",
+  "Gastar dinheiro em soluções inúteis - (Comprando cursos que não funcionam)",
+  "Envelhecer sem realizar, sem conquistar o amor da sua vida - (Assistindo a vida passar)",
+  "Morrer se perguntando \"e se...?\" - (Carregando o peso dos arrependimentos)",
 ];
 
 const caminho2Items = [
-  "Ativar seu magnetismo natural - Fazendo ela te notar sem esforço",
-  "Ser notado e respeitado - Entrando em qualquer ambiente com presença",
-  "Atrair a garota que você tanto gosta - Ela vindo até você naturalmente",
-  "Desenvolver confiança genuína - Que transparece em cada palavra e gesto",
-  "Conquistar a mina dos sonhos - E ter outras interessadas também",
-  "Olhar para trás sem arrependimentos - Sabendo que você viveu intensamente",
+  "Ativar seu magnetismo natural - (Fazendo ela te notar sem esforço)",
+  "Ser notado e respeitado - (Entrando em qualquer ambiente com presença)",
+  "Atrair a garota que você tanto gosta - (Ela vindo até você naturalmente)",
+  "Desenvolver confiança genuína - (Que transparece em cada palavra e gesto)",
+  "Conquistar a mina dos sonhos - (E ter outras interessadas também)",
+  "Olhar para trás sem arrependimentos - (Sabendo que você viveu intensamente)",
 ];
 
 export function FinalCtaSection() {
@@ -40,13 +40,19 @@ export function FinalCtaSection() {
             </CardTitle>
           </CardHeader>
           <CardContent className="p-0 mt-4">
-            <ul className="space-y-2 text-muted-foreground">
-              {caminho1Items.map((item, index) => (
-                <li key={index} className="flex items-start gap-2">
-                  <span className="text-red-500 mt-1">•</span>
-                  <span>{item}</span>
-                </li>
-              ))}
+            <ul className="space-y-3">
+              {caminho1Items.map((item, index) => {
+                const parts = item.split(" - ");
+                return (
+                  <li key={index} className="flex items-start gap-3">
+                    <span className="text-red-500 mt-1">•</span>
+                    <div>
+                      <span className="font-semibold text-foreground">{parts[0]}</span>
+                      {parts[1] && <span className="text-muted-foreground/80 block">{parts[1]}</span>}
+                    </div>
+                  </li>
+                );
+              })}
             </ul>
           </CardContent>
         </Card>
@@ -61,13 +67,19 @@ export function FinalCtaSection() {
             </CardTitle>
           </CardHeader>
           <CardContent className="p-0 mt-4">
-            <ul className="space-y-2 text-muted-foreground">
-              {caminho2Items.map((item, index) => (
-                <li key={index} className="flex items-start gap-2">
-                  <span className="text-green-500 mt-1">•</span>
-                  <span>{item}</span>
-                </li>
-              ))}
+            <ul className="space-y-3">
+              {caminho2Items.map((item, index) => {
+                const parts = item.split(" - ");
+                return (
+                  <li key={index} className="flex items-start gap-3">
+                    <span className="text-green-500 mt-1">•</span>
+                     <div>
+                      <span className="font-semibold text-foreground">{parts[0]}</span>
+                      {parts[1] && <span className="text-muted-foreground/80 block">{parts[1]}</span>}
+                    </div>
+                  </li>
+                );
+              })}
             </ul>
           </CardContent>
         </Card>
