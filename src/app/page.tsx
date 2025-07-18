@@ -11,6 +11,7 @@ import { PerguntasRespostasSection } from '@/components/sections/perguntas-respo
 import { GarantiaSection } from '@/components/sections/garantia';
 import { FinalCtaSection } from '@/components/sections/final-cta';
 import { FooterSection } from '@/components/sections/footer';
+import { FloatingCtaButton } from '@/components/shared/floating-cta-button';
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <FinalCtaSection />
       </main>
       <FooterSection />
+      <FloatingCtaButton />
     </div>
   );
 }
