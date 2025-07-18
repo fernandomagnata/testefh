@@ -1,10 +1,11 @@
+
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Image from 'next/image';
 
 const testimonialsData = [
   {
-    name: 'Rafael Costa',
+    name: 'Junior Costa',
     avatar: 'https://placehold.co/100x100.png',
     quote:
       'Sempre fui o cara invisível que as mulheres ignoravam. Depois do Magnetismo Oculto, conquistei não só a garota que eu admirava há 2 anos, mas ela que demonstrou interesse por mim! Hoje tenho várias opções. Realmente funciona!',
