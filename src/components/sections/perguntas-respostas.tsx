@@ -3,20 +3,20 @@ import type { QAItem } from "@/lib/types";
 
 const qaItems: QAItem[] = [
   {
-    question: "Existe garantia de devolução do dinheiro?",
-    answer: "Sim! Oferecemos uma garantia de devolução do dinheiro de 30 dias, sem perguntas. Se você não estiver satisfeito por qualquer motivo, basta entrar em contato conosco para um reembolso total."
+    question: "O que acontece se eu não conseguir resultados?",
+    answer: "Oferecemos uma garantia de devolução do dinheiro de 7 dias, sem perguntas. Se você não estiver satisfeito por qualquer motivo, basta entrar em contato conosco para um reembolso total."
   },
   {
     question: "Esta é uma compra única ou uma assinatura?",
     answer: "A oferta atual é para uma compra única, garantindo acesso vitalício ao produto e a todas as futuras atualizações da versão atual."
   },
   {
-    question: "E se eu precisar de ajuda ou suporte?",
-    answer: "Oferecemos suporte premium por e-mail 24/7 para todos os nossos clientes. Você também terá acesso ao nosso fórum comunitário exclusivo, onde poderá fazer perguntas e compartilhar dicas."
+    question: "Como funciona o suporte ao cliente?",
+    answer: "Oferecemos suporte premium por e-mail em até 24 horas para todos os nossos clientes. Você também terá acesso ao nosso grupo exclusivo no Telegram, onde poderá fazer perguntas e trocar experiências com outros homens."
   },
   {
     question: "Posso usar em múltiplos dispositivos?",
-    answer: "Com certeza. Sua licença permite que você instale и use o produto em todos os seus dispositivos pessoais, em desktop e mobile."
+    answer: "Com certeza. Sua licença permite que você instale e use o produto em todos os seus dispositivos pessoais, em desktop e mobile."
   },
   {
     question: "Em quanto tempo verei resultados?",
@@ -25,6 +25,10 @@ const qaItems: QAItem[] = [
   {
     question: "Este curso funciona para homens tímidos ou introvertidos?",
     answer: "Absolutamente. O curso foi projetado especificamente para ajudar homens de todos os tipos de personalidade, incluindo tímidos e introvertidos, a desenvolver uma confiança autêntica que não exige que eles mudem quem são, mas sim que aprimorem suas qualidades naturais."
+  },
+  {
+    question: "Preciso ter experiência prévia com mulheres?",
+    answer: "Não é necessário. O Magnetismo Oculto foi desenvolvido tanto para iniciantes quanto para homens que já têm alguma experiência. Começamos do básico e evoluímos gradualmente, respeitando o ritmo de cada pessoa."
   }
 ];
 
