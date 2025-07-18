@@ -23,8 +23,8 @@ export default function Home() {
         <PersuasaoOcultaSection />
         <ResultadosSection />
         <OfertaSection />
-        <DepoimentosSection />
         <BonusSection />
+        <DepoimentosSection />
         <PerguntasRespostasSection />
         <GarantiaSection />
         <FinalCtaSection />
