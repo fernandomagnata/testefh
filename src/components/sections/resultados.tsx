@@ -24,14 +24,14 @@ export function ResultadosSection() {
       <div className="mt-12 w-full max-w-5xl">
         <Carousel
           opts={{
-            align: "start",
+            align: "center",
             loop: true,
           }}
           className="w-full"
         >
-          <CarouselContent>
+          <CarouselContent className="-ml-2">
             {images.map((image, index) => (
-              <CarouselItem key={index} className="basis-3/4 md:basis-1/3">
+              <CarouselItem key={index} className="basis-4/5 md:basis-1/3 pl-2">
                 <div className="p-1">
                   <div className="relative aspect-[9/14] w-full overflow-hidden rounded-lg">
                     <Image
