@@ -23,9 +23,9 @@ const caminho2Items = [
 export function FinalCtaSection() {
   return (
     <section className="text-center flex flex-col items-center bg-card/50 rounded-xl p-8 md:p-16 border border-primary/20">
-      <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight flex items-center gap-3">
+      <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight flex items-center justify-center flex-wrap gap-3">
         <TrendingUp className="w-10 h-10 text-primary" />
-        AGORA VOCÊ TEM DUAS ESCOLHAS, E DOIS DESTINOS:
+        <span>AGORA VOCÊ TEM DUAS ESCOLHAS, E DOIS DESTINOS:</span>
       </h2>
       
       <div className="mt-12 grid md:grid-cols-2 gap-8 w-full max-w-5xl">
