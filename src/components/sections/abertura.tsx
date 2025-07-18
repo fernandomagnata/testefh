@@ -8,7 +8,7 @@ export function AberturaSection() {
         Desbloqueie Seu Magnetismo Masculino Oculto
       </h1>
       <p className="mt-4 max-w-2xl text-lg md:text-xl text-muted-foreground">
-        Descubra o método científico secreto que transforma homens invisíveis em magnetos de atração feminina em apenas 21 dias. Junte-se a mais de 5.000 homens que já despertaram seu poder magnético natural.
+        Descubra o método científico secreto que transforma homens invisíveis em magnetos de atração feminina em menos de 21 dias.
       </p>
       <div className="my-8 w-full max-w-3xl aspect-video bg-card rounded-lg border border-primary/20 overflow-hidden">
         <iframe
