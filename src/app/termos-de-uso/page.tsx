@@ -18,7 +18,7 @@ export default function TermosDeUsoPage() {
             <h1 className="text-4xl md:text-5xl font-extrabold text-primary text-center">Termos de Uso</h1>
         </div>
         <div className="space-y-8 text-muted-foreground">
-          <p>Bem-vindo(a) a Luminous Sales Page ("Site"), operado por Luminous Sales Page ("nós", "nosso" ou "nossa"). Estes Termos de Uso ("Termos") regem o seu acesso e uso do nosso Site, produtos e serviços.</p>
+          <p>Bem-vindo(a) ao Magnetismo Oculto ("Site"), operado por Magnetismo Oculto ("nós", "nosso" ou "nossa"). Estes Termos de Uso ("Termos") regem o seu acesso e uso do nosso Site, produtos e serviços.</p>
           <p>Ao acessar ou usar nosso Site e nossos serviços, você concorda em estar vinculado a estes Termos. Se você não concordar com qualquer parte destes Termos, você não deve acessar o Site ou utilizar nossos serviços.</p>
 
           <section>
@@ -44,7 +44,7 @@ export default function TermosDeUsoPage() {
 
           <section>
             <h2 className="text-2xl font-bold text-foreground mb-4">3. Propriedade Intelectual</h2>
-            <p>Todo o conteúdo presente no Site, incluindo, mas não se limitando a textos, gráficos, logotipos, ícones, imagens, clipes de áudio, downloads digitais, compilações de dados e software, é propriedade de Luminous Sales Page ou de seus fornecedores de conteúdo e é protegido por leis de direitos autorais e outras leis de propriedade intelectual.</p>
+            <p>Todo o conteúdo presente no Site, incluindo, mas não se limitando a textos, gráficos, logotipos, ícones, imagens, clipes de áudio, downloads digitais, compilações de dados e software, é propriedade de Magnetismo Oculto ou de seus fornecedores de conteúdo e é protegido por leis de direitos autorais e outras leis de propriedade intelectual.</p>
             <p>Você não pode reproduzir, duplicar, copiar, vender, revender ou explorar qualquer parte do Serviço, uso do Serviço ou acesso ao Serviço sem nossa permissão expressa por escrito.</p>
           </section>
 
@@ -54,11 +54,9 @@ export default function TermosDeUsoPage() {
             <p>Nós nos esforçamos para ser o mais precisos possível na descrição dos nossos produtos. No entanto, não garantimos que as descrições dos produtos ou outros conteúdos do Site sejam totalmente precisos, completos, confiáveis, atuais ou livres de erros. As imagens dos produtos são meramente ilustrativas e podem não corresponder exatamente ao produto final.</p>
             <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">4.2. Preços</h3>
             <p>Todos os preços exibidos no Site estão em BRL (Real Brasileiro) e estão sujeitos a alterações sem aviso prévio. Não somos responsáveis por erros tipográficos nos preços.</p>
-            <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">4.3. Disponibilidade</h3>
-            <p>A disponibilidade dos produtos está sujeita a estoque. Caso um produto adquirido não esteja mais disponível, entraremos em contato para oferecer alternativas ou o reembolso.</p>
-            <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">4.4. Compra e Pagamento</h3>
+            <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">4.3. Compra e Pagamento</h3>
             <p>Ao realizar uma compra em nosso Site, você concorda em fornecer informações de pagamento válidas e precisas. Todas as transações são processadas por meio de gateways de pagamento seguros. Não armazenamos seus dados de cartão de crédito em nossos servidores.</p>
-            <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">4.5. Cancelamento e Reembolso</h3>
+            <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">4.4. Cancelamento e Reembolso</h3>
             <p>Nossa política de cancelamento e reembolso é detalhada na nossa página de garantia. Ao realizar uma compra, você concorda com os termos lá estabelecidos.</p>
           </section>
 
@@ -70,54 +68,42 @@ export default function TermosDeUsoPage() {
 
           <section>
             <h2 className="text-2xl font-bold text-foreground mb-4">6. Limitação de Responsabilidade</h2>
-            <p>Em nenhuma circunstância Luminous Sales Page, seus diretores, funcionários, parceiros, agentes, fornecedores ou afiliados serão responsáveis por quaisquer danos indiretos, incidentais, especiais, consequenciais ou punitivos, incluindo, sem limitação, perda de lucros, dados, uso, boa vontade ou outras perdas intangíveis, resultantes de (a) seu acesso ou uso ou incapacidade de acessar ou usar o Site; (b) qualquer conduta ou conteúdo de terceiros no Site; (c) qualquer conteúdo obtido do Site; e (d) acesso não autorizado, uso ou alteração de suas transmissões ou conteúdo, seja com base em garantia, contrato, ato ilícito (incluindo negligência) ou qualquer outra teoria legal, independentemente de termos sido informados sobre a possibilidade de tais danos.</p>
+            <p>Em nenhuma circunstância Magnetismo Oculto, seus diretores, funcionários, parceiros, agentes, fornecedores ou afiliados serão responsáveis por quaisquer danos indiretos, incidentais, especiais, consequenciais ou punitivos, incluindo, sem limitação, perda de lucros, dados, uso, boa vontade ou outras perdas intangíveis, resultantes de (a) seu acesso ou uso ou incapacidade de acessar ou usar o Site; (b) qualquer conduta ou conteúdo de terceiros no Site; (c) qualquer conteúdo obtido do Site; e (d) acesso não autorizado, uso ou alteração de suas transmissões ou conteúdo.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-foreground mb-4">7. Indenização</h2>
-            <p>Você concorda em defender, indenizar e isentar Luminous Sales Page e seus licenciadores e licenciados, e seus funcionários, contratados, agentes, diretores e oficiais, de e contra todas e quaisquer reivindicações, danos, obrigações, perdas, responsabilidades, custos ou dívidas, e despesas (incluindo, mas não se limitando a honorários advocatícios), resultantes de (a) seu uso e acesso ao Site; (b) sua violação de qualquer termo destes Termos; (c) sua violação de qualquer direito de terceiros, incluindo, sem limitação, qualquer direito autoral, propriedade ou direito de privacidade; ou (d) qualquer reivindicação de que seu conteúdo causou danos a um terceiro.</p>
+            <h2 className="text-2xl font-bold text-foreground mb-4">7. Links para Outros Sites</h2>
+            <p>Nosso Site pode conter links para sites de terceiros ou serviços que não são de propriedade ou controlados por Magnetismo Oculto.</p>
+            <p>Magnetismo Oculto não tem controle e não assume responsabilidade pelo conteúdo, políticas de privacidade ou práticas de quaisquer sites ou serviços de terceiros. Você reconhece e concorda que Magnetismo Oculto não será responsável, direta ou indiretamente, por qualquer dano ou perda causada ou alegadamente causada por ou em conexão com o uso ou dependência de qualquer conteúdo, bens ou serviços disponíveis em ou através de quaisquer desses sites ou serviços.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-foreground mb-4">8. Links para Outros Sites</h2>
-            <p>Nosso Site pode conter links para sites de terceiros ou serviços que não são de propriedade ou controlados por Luminous Sales Page.</p>
-            <p>Luminous Sales Page não tem controle e não assume responsabilidade pelo conteúdo, políticas de privacidade ou práticas de quaisquer sites ou serviços de terceiros. Você reconhece e concorda que Luminous Sales Page não será responsável, direta ou indiretamente, por qualquer dano ou perda causada ou alegadamente causada por ou em conexão com o uso ou dependência de qualquer conteúdo, bens ou serviços disponíveis em ou através de quaisquer desses sites ou serviços.</p>
-            <p>Recomendamos fortemente que você leia os termos e condições e as políticas de privacidade de quaisquer sites de terceiros ou serviços que você visitar.</p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-foreground mb-4">9. Rescisão</h2>
-            <p>Podemos rescindir ou suspender seu acesso ao nosso Site imediatamente, sem aviso prévio ou responsabilidade, por qualquer motivo, incluindo, sem limitação, se você violar os Termos.</p>
-            <p>Todas as disposições dos Termos que, por sua natureza, deveriam sobreviver à rescisão, sobreviverão à rescisão, incluindo, sem limitação, as disposições de propriedade, isenções de garantia, indenização e limitações de responsabilidade.</p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-foreground mb-4">10. Lei Aplicável e Foro</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-4">8. Lei Aplicável e Foro</h2>
             <p>Estes Termos serão regidos e interpretados de acordo com as leis do Brasil, independentemente de suas disposições sobre conflitos de leis.</p>
             <p>Qualquer disputa decorrente ou relacionada a estes Termos será submetida ao foro da comarca de São Paulo, SP, com exclusão de qualquer outro, por mais privilegiado que seja.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-foreground mb-4">11. Disposições Gerais</h2>
-            <h3 className="text-xl font-semibold text-foreground mb-2">11.1. Acordo Integral</h3>
-            <p>Estes Termos e nossa Política de Privacidade constituem o acordo integral entre você e Luminous Sales Page em relação ao nosso Site e substituem todos os acordos anteriores ou contemporâneos, comunicações e propostas, sejam orais ou escritas, entre você e Luminous Sales Page.</p>
-            <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">11.2. Não Renúncia</h3>
+            <h2 className="text-2xl font-bold text-foreground mb-4">9. Disposições Gerais</h2>
+            <h3 className="text-xl font-semibold text-foreground mb-2">9.1. Acordo Integral</h3>
+            <p>Estes Termos e nossa Política de Privacidade constituem o acordo integral entre você e Magnetismo Oculto em relação ao nosso Site e substituem todos os acordos anteriores ou contemporâneos, comunicações e propostas, sejam orais ou escritas, entre você e Magnetismo Oculto.</p>
+            <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">9.2. Não Renúncia</h3>
             <p>Nenhuma renúncia a qualquer termo destes Termos será considerada uma renúncia adicional ou contínua de tal termo ou de qualquer outro termo, e o não exercício de qualquer direito ou disposição sob estes Termos não constituirá uma renúncia de tal direito ou disposição.</p>
-            <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">11.3. Nulidade</h3>
+            <h3 className="text-xl font-semibold text-foreground mt-4 mb-2">9.3. Nulidade</h3>
             <p>Se qualquer disposição destes Termos for considerada inválida ou inexequível por um tribunal de jurisdição competente, as demais disposições destes Termos permanecerão em pleno vigor e efeito.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-foreground mb-4">12. Alterações a Estes Termos</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-4">10. Alterações a Estes Termos</h2>
             <p>Reservamo-nos o direito, a nosso exclusivo critério, de modificar ou substituir estes Termos a qualquer momento. Se uma revisão for material, tentaremos fornecer um aviso com pelo menos 30 dias de antecedência antes que quaisquer novos termos entrem em vigor. O que constitui uma alteração material será determinado a nosso exclusivo critério.</p>
             <p>Ao continuar a acessar ou usar nosso Site após essas revisões entrarem em vigor, você concorda em ficar vinculado aos termos revisados. Se você não concordar com os novos termos, pare de usar o Site.</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-foreground mb-4">13. Contato</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-4">11. Contato</h2>
             <p>Se você tiver alguma dúvida sobre estes Termos de Uso, entre em contato conosco:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li>Por e-mail: contato@luminous.com</li>
+              <li>Por e-mail: suporte.magnetismooculto@gmail.com</li>
             </ul>
           </section>
         </div>
@@ -126,3 +112,5 @@ export default function TermosDeUsoPage() {
     </div>
   );
 }
+
+    

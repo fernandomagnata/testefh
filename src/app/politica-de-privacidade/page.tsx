@@ -18,7 +18,7 @@ export default function PoliticaDePrivacidadePage() {
           <h1 className="text-4xl md:text-5xl font-extrabold text-primary text-center">Política de Privacidade</h1>
         </div>
         <div className="space-y-8 text-muted-foreground">
-          <p>A sua privacidade é de extrema importância para nós. Esta Política de Privacidade descreve como Luminous Sales Page ("nós", "nosso" ou "nossa") coleta, usa, compartilha e protege as suas informações pessoais quando você visita Luminous Sales Page (o "Site"), utiliza os nossos serviços ou interage conosco de qualquer forma.</p>
+          <p>A sua privacidade é de extrema importância para nós. Esta Política de Privacidade descreve como Magnetismo Oculto ("nós", "nosso" ou "nossa") coleta, usa, compartilha e protege as suas informações pessoais quando você visita Magnetismo Oculto (o "Site"), utiliza os nossos serviços ou interage conosco de qualquer forma.</p>
           <p>Ao utilizar o nosso Site e os nossos serviços, você concorda com a coleta e o uso das suas informações de acordo com esta política.</p>
 
           <section>
@@ -69,7 +69,7 @@ export default function PoliticaDePrivacidadePage() {
             <ul className="list-disc pl-6 space-y-2 mt-2">
                 <li><strong>Provedores de Serviços:</strong> Compartilhamos informações com empresas e indivíduos terceirizados que nos auxiliam na operação do nosso negócio (ex: processadores de pagamento, empresas de logística, provedores de hospedagem de site, serviços de e-mail marketing, serviços de análise de dados, plataformas de publicidade como Facebook Ads). Esses provedores de serviços têm acesso às suas informações pessoais apenas para executar essas tarefas em nosso nome e são obrigados a não divulgá-las ou usá-las para qualquer outra finalidade.</li>
                 <li><strong>Parceiros de Negócios:</strong> Podemos compartilhar informações com parceiros de negócios para oferecer a você certos produtos, serviços ou promoções, sempre com seu consentimento prévio.</li>
-                <li><strong>Conformidade Legal e Proteção:</strong> Podemos divulgar suas informações pessoais se exigido por lei ou em resposta a intimações ou ordens judiciais, ou se acreditarmos de boa-fé que tal ação é necessária para cumprir uma obrigação legal, proteger e defender os direitos ou propriedade de Luminous Sales Page, prevenir ou investigar possíveis irregularidades relacionadas ao Serviço, proteger a segurança pessoal dos usuários do Serviço ou do público, ou proteger-se contra responsabilidade legal.</li>
+                <li><strong>Conformidade Legal e Proteção:</strong> Podemos divulgar suas informações pessoais se exigido por lei ou em resposta a intimações ou ordens judiciais, ou se acreditarmos de boa-fé que tal ação é necessária para cumprir uma obrigação legal, proteger e defender os direitos ou propriedade de Magnetismo Oculto, prevenir ou investigar possíveis irregularidades relacionadas ao Serviço, proteger a segurança pessoal dos usuários do Serviço ou do público, ou proteger-se contra responsabilidade legal.</li>
                 <li><strong>Transferências de Negócios:</strong> Em caso de fusão, aquisição ou venda de ativos, suas informações pessoais podem ser transferidas como parte dos ativos. Notificaremos você antes que suas informações pessoais sejam transferidas e se tornem sujeitas a uma Política de Privacidade diferente.</li>
                 <li><strong>Com Seu Consentimento:</strong> Podemos compartilhar suas informações para qualquer outra finalidade com o seu consentimento explícito.</li>
             </ul>
@@ -94,7 +94,7 @@ export default function PoliticaDePrivacidadePage() {
                 <li><strong>Direito de Anonimização, Bloqueio ou Eliminação:</strong> Solicitar a anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a LGPD.</li>
                 <li><strong>Direito à Portabilidade:</strong> Solicitar a portabilidade dos seus dados a outro fornecedor de serviço ou produto.</li>
                 <li><strong>Direito à Eliminação:</strong> Solicitar a eliminação dos dados pessoais tratados com o seu consentimento, exceto nas hipóteses previstas em lei.</li>
-                <li><strong>Direito à Informação sobre Compartilhamento:</strong> Obter informações sobre as entidades públicas e privadas com as quais o Luminous Sales Page realizou uso compartilhado de dados.</li>
+                <li><strong>Direito à Informação sobre Compartilhamento:</strong> Obter informações sobre as entidades públicas e privadas com as quais o Magnetismo Oculto realizou uso compartilhado de dados.</li>
                 <li><strong>Direito de Revogação do Consentimento:</strong> Revogar o seu consentimento a qualquer momento, sem que isso afete a legalidade do tratamento realizado antes da revogação.</li>
                 <li><strong>Direito de Oposição:</strong> Opor-se ao tratamento de seus dados pessoais em certas situações.</li>
             </ul>
@@ -120,7 +120,7 @@ export default function PoliticaDePrivacidadePage() {
             <h2 className="text-2xl font-bold text-foreground mb-4">10. Contato</h2>
             <p>Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco:</p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-                <li>Por e-mail: contato@luminous.com</li>
+                <li>Por e-mail: suporte.magnetismooculto@gmail.com</li>
             </ul>
           </section>
         </div>
@@ -129,3 +129,5 @@ export default function PoliticaDePrivacidadePage() {
     </div>
   );
 }
+
+    
