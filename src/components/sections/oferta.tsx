@@ -1,13 +1,5 @@
 import { Button } from "@/components/ui/button";
-
-const includedItems = [
-    { name: "Aulão de VSM Completo", price: "R$ 497" },
-    { name: "Os 7 Passos Para Reconquistar Qualquer Mulher", price: "R$ 97" },
-    { name: "Como funciona a cabeça das mulheres", price: "R$ 147" },
-    { name: "Como Ser o Homem Ideal para Ela", price: "R$ 127" },
-    { name: "Massagem e Prazer", price: "R$ 197" },
-    { name: "Comunidade V.S.M.", price: "Valor imensurável" },
-];
+import Link from "next/link";
 
 export function OfertaSection() {
   return (
@@ -21,24 +13,6 @@ export function OfertaSection() {
             Acesso ao Aulão de V.S.M. + bônus por menos de um café por dia.
           </p>
           
-          <ul className="mt-10 space-y-4 text-left">
-            {includedItems.map((item, index) => (
-              <li key={index} className="flex justify-between items-start text-base border-b border-neutral-700 pb-2">
-                <span className={`flex-1 ${index === 0 ? "text-primary font-bold" : "text-neutral-200"}`}>
-                  <span className="text-primary mr-2">•</span>{item.name}
-                </span>
-                <span className={`font-bold ml-4 text-right ${index === 0 ? 'text-primary' : 'text-neutral-200'}`}>
-                  {item.price.startsWith('R$') ? (
-                    <>
-                      <span>R$</span><br/>
-                      <span className="text-2xl">{item.price.split(' ')[1]}</span>
-                    </>
-                  ) : item.price}
-                </span>
-              </li>
-            ))}
-          </ul>
-
           <div className="mt-12">
             <p className="text-lg text-neutral-400">De <span className="line-through">R$ 147,00</span></p>
             <p className="text-7xl md:text-8xl font-bold text-primary my-2">
@@ -46,12 +20,14 @@ export function OfertaSection() {
             </p>
           </div>
 
-          <Button 
-            size="lg" 
-            className="mt-10 w-full h-14 bg-primary text-primary-foreground text-lg font-bold rounded-lg transition-all duration-300 ease-in-out hover:bg-primary/90 hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50"
-          >
-            QUERO GARANTIR MINHA VAGA AGORA
-          </Button>
+          <Link href="https://www.youtube.com/" target="_blank">
+            <Button 
+              size="lg" 
+              className="mt-10 w-full h-14 bg-primary text-primary-foreground text-lg font-bold rounded-lg transition-all duration-300 ease-in-out hover:bg-primary/90 hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50"
+            >
+              QUERO GARANTIR MINHA VAGA AGORA
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

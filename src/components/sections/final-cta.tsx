@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, CheckSquare, X, ShieldCheck, CreditCard, MousePointerClick, TrendingUp } from "lucide-react";
+import Link from "next/link";
 
 const caminho1Items = [
   "Permanecer invisível",
@@ -80,10 +81,12 @@ export function FinalCtaSection() {
         <MousePointerClick className="w-7 h-7" />
         <span>Clique agora e aprenda como conquista a garota dos sonhos:</span>
       </h3>
-
-      <Button size="lg" className="mt-8 h-16 w-full max-w-md font-bold text-2xl bg-gradient-to-r from-primary to-purple-600 text-primary-foreground rounded-full transition-all duration-300 ease-in-out hover:shadow-[0_0_35px_hsl(var(--primary))] shadow-[0_0_20px_hsl(var(--primary))] border-2 border-primary/50">
-        QUERO AGORA
-      </Button>
+      
+      <Link href="https://www.youtube.com/" target="_blank">
+        <Button size="lg" className="mt-8 h-16 w-full max-w-md font-bold text-2xl bg-gradient-to-r from-primary to-purple-600 text-primary-foreground rounded-full transition-all duration-300 ease-in-out hover:shadow-[0_0_35px_hsl(var(--primary))] shadow-[0_0_20px_hsl(var(--primary))] border-2 border-primary/50">
+          QUERO AGORA
+        </Button>
+      </Link>
 
       <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6 text-sm text-muted-foreground">
         <div className="flex items-center gap-2">
