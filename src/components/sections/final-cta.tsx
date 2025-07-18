@@ -94,7 +94,7 @@ Pare de adiar.`}
 
       <h3 className="mt-12 text-2xl font-bold flex items-center justify-center flex-wrap gap-3 text-primary">
         <MousePointerClick className="w-7 h-7" />
-        <span>Clique agora e aprenda como conquista a garota dos sonhos:</span>
+        <span>Clique agora e aprenda como conquistar a sua mulher dos sonhos:</span>
       </h3>
       
       <Link href="https://www.youtube.com/" target="_blank">
