@@ -1,25 +1,25 @@
-import { HeroSection } from '@/components/sections/hero';
-import { IntroductionSection } from '@/components/sections/introduction';
-import { ProblemSolutionSection } from '@/components/sections/problem-solution';
-import { OfferSection } from '@/components/sections/offer';
-import { TestimonialsSection } from '@/components/sections/testimonials';
-import { BonusesSection } from '@/components/sections/bonuses';
-import { QASection } from '@/components/sections/qa';
-import { GuaranteeSection } from '@/components/sections/guarantee';
+import { AberturaSection } from '@/components/sections/abertura';
+import { IntroducaoSection } from '@/components/sections/introducao';
+import { ProblemaSolucaoSection } from '@/components/sections/problema-solucao';
+import { OfertaSection } from '@/components/sections/oferta';
+import { DepoimentosSection } from '@/components/sections/depoimentos';
+import { BonusSection } from '@/components/sections/bonus';
+import { PerguntasRespostasSection } from '@/components/sections/perguntas-respostas';
+import { GarantiaSection } from '@/components/sections/garantia';
 import { FinalCtaSection } from '@/components/sections/final-cta';
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center overflow-x-hidden">
       <div className="w-full max-w-6xl px-4 md:px-8 flex flex-col gap-24 md:gap-32 py-16 md:py-24">
-        <HeroSection />
-        <IntroductionSection />
-        <ProblemSolutionSection />
-        <OfferSection />
-        <TestimonialsSection />
-        <BonusesSection />
-        <QASection />
-        <GuaranteeSection />
+        <AberturaSection />
+        <IntroducaoSection />
+        <ProblemaSolucaoSection />
+        <OfertaSection />
+        <DepoimentosSection />
+        <BonusSection />
+        <PerguntasRespostasSection />
+        <GarantiaSection />
         <FinalCtaSection />
       </div>
     </main>
