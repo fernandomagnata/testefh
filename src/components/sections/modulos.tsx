@@ -3,24 +3,24 @@ import { Package } from "lucide-react";
 
 const modules = [
   {
-    title: "MÓDULO 1: FUNDAMENTOS DA PRESENÇA INVISÍVEL",
-    description: "Os 7 pilares da energia magnética, como ativar seu campo de influência, técnicas de respiração e postura.",
+    title: "MÓDULO 1: MAGNETISMO INTERIOR",
+    description: "Desenvolva sua confiança autêntica, presença magnética e energia que atrai naturalmente.",
   },
   {
-    title: "MÓDULO 2: LINGUAGEM CORPORAL MAGNÉTICA",
-    description: "Micromovimentos, uso do olhar, gestos de confiança e caminhada de liderança.",
+    title: "MÓDULO 2: LINGUAGEM CORPORAL HIPNÓTICA",
+    description: "Domine o olhar magnético, postura de comando e voz que transmite liderança.",
   },
   {
-    title: "MÓDULO 3: ENERGIA SILENCIOSA",
-    description: "Criar curiosidade, dominar o silêncio estratégico e criar sua assinatura energética pessoal.",
+    title: "MÓDULO 3: PSICOLOGIA DA ATRAÇÃO FEMININA",
+    description: "Descubra os gatilhos emocionais femininos e como criar tensão e mistério irresistíveis.",
   },
   {
-    title: "MÓDULO 4: APLICAÇÃO PRÁTICA",
-    description: "Estratégias para trabalho, eventos sociais, relacionamentos e networking.",
+    title: "MÓDULO 4: SEDUÇÃO SOCIAL",
+    description: "Aprenda a dominar ambientes sociais, construir prova social e elevar seu status.",
   },
   {
-    title: "MÓDULO 5: CASOS REAIS E TROUBLESHOOTING",
-    description: "20 situações práticas resolvidas, erros comuns e adaptações para diferentes personalidades.",
+    title: "MÓDULO 5: COMUNICAÇÃO PERSUASIVA",
+    description: "Torne-se um mestre em storytelling magnético e escuta profunda que gera conexão.",
   },
 ];
 
