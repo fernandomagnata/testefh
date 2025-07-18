@@ -1,6 +1,6 @@
-
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const bonusItems = [
@@ -17,6 +17,16 @@ export function OfertaSection() {
     <section className="flex flex-col items-center">
       <div className="w-full max-w-lg bg-black text-white py-12 px-6 sm:px-10 rounded-2xl border-2 border-primary/30 shadow-2xl shadow-primary/10">
         <div className="max-w-md mx-auto text-center">
+          <div className="relative w-full h-64 mb-8">
+            <Image
+              src="https://placehold.co/600x400.png"
+              alt="Magnetismo Oculto - A Ciência da Atração Invisível"
+              layout="fill"
+              objectFit="contain"
+              data-ai-hint="product mockup"
+            />
+          </div>
+
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight">
             Qual o valor do investimento?
           </h2>
