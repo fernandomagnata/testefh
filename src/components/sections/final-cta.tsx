@@ -76,9 +76,9 @@ export function FinalCtaSection() {
         Você chegou até aqui porque algo dentro de você sabe que merece mais. Mais respeito, mais atenção, mais oportunidades. A ciência prova: isso não é sorte ou genética. É técnica. É método. É possível. Pare de adiar. Comece agora.
       </p>
 
-      <h3 className="mt-12 text-2xl font-bold flex items-center gap-3 text-primary">
+      <h3 className="mt-12 text-2xl font-bold flex items-center justify-center flex-wrap gap-3 text-primary">
         <MousePointerClick className="w-7 h-7" />
-        Clique agora e aprenda como conquista a garota dos sonhos:
+        <span>Clique agora e aprenda como conquista a garota dos sonhos:</span>
       </h3>
 
       <Button size="lg" className="mt-8 h-16 w-full max-w-md font-bold text-2xl bg-gradient-to-r from-primary to-purple-600 text-primary-foreground rounded-full transition-all duration-300 ease-in-out hover:shadow-[0_0_35px_hsl(var(--primary))] shadow-[0_0_20px_hsl(var(--primary))] border-2 border-primary/50">
