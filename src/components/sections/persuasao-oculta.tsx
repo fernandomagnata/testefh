@@ -37,7 +37,7 @@ export function PersuasaoOcultaSection() {
         <div>
             <h3 className="text-2xl font-bold text-foreground">O QUE É ESTE MÉTODO?</h3>
             <p className="mt-2 text-lg text-muted-foreground max-w-3xl mx-auto">
-              O Magnetismo Oculto é um sistema completo baseado em neurociência comportamental que ensina homens a desenvolverem uma presença magnética autêntica. Não é sobre truques ou manipulação - é sobre despertar qualidades masculinas que naturalmente atraem respeito e interesse.
+              O Magnetismo Oculto é um sistema completo baseado em neurociência comportamental que ensina homens a desenvolverem uma presença magnética autêntica. Não é sobre truques ou manipulação, é sobre despertar qualidades masculinas que naturalmente atraem respeito e interesse.
             </p>
         </div>
 
