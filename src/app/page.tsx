@@ -1,3 +1,4 @@
+
 import { AberturaSection } from '@/components/sections/abertura';
 import { IntroducaoSection } from '@/components/sections/introducao';
 import { SituacoesSection } from '@/components/sections/situacoes';
@@ -24,8 +25,8 @@ export default function Home() {
         <PersuasaoOcultaSection />
         <ResultadosSection />
         <OfertaSection />
-        <BonusSection />
         <DepoimentosSection />
+        <BonusSection />
         <PerguntasRespostasSection />
         <GarantiaSection />
         <FinalCtaSection />
