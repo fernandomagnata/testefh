@@ -31,7 +31,7 @@ export function ResultadosSection() {
         >
           <CarouselContent>
             {images.map((image, index) => (
-              <CarouselItem key={index} className="basis-1/2 md:basis-1/3">
+              <CarouselItem key={index} className="basis-3/4 md:basis-1/3">
                 <div className="p-1">
                   <div className="relative aspect-[9/14] w-full overflow-hidden rounded-lg">
                     <Image
