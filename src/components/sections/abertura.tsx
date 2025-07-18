@@ -5,10 +5,10 @@ export function AberturaSection() {
   return (
     <section className="text-center flex flex-col items-center">
       <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-primary/70 pb-4">
-        Desbloqueie Seu Verdadeiro Potencial
+        Desbloqueie Seu Magnetismo Masculino Oculto
       </h1>
       <p className="mt-4 max-w-2xl text-lg md:text-xl text-muted-foreground">
-        Descubra a solução definitiva para impulsionar sua produtividade e alcançar seus objetivos mais rápido do que nunca. Junte-se a milhares de usuários de sucesso hoje.
+        Descubra o método científico secreto que transforma homens invisíveis em magnetos de atração feminina em apenas 21 dias. Junte-se a mais de 5.000 homens que já despertaram seu poder magnético natural.
       </p>
       <div className="my-8 w-full max-w-3xl aspect-video bg-card rounded-lg border border-primary/20 overflow-hidden">
         <iframe
