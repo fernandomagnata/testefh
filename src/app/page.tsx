@@ -1,5 +1,6 @@
 import { AberturaSection } from '@/components/sections/abertura';
 import { IntroducaoSection } from '@/components/sections/introducao';
+import { SituacoesSection } from '@/components/sections/situacoes';
 import { ProblemaSolucaoSection } from '@/components/sections/problema-solucao';
 import { PersuasaoOcultaSection } from '@/components/sections/persuasao-oculta';
 import { OfertaSection } from '@/components/sections/oferta';
@@ -16,6 +17,7 @@ export default function Home() {
       <main className="w-full max-w-6xl px-4 md:px-8 flex flex-col gap-24 md:gap-32 py-16 md:py-24">
         <AberturaSection />
         <IntroducaoSection />
+        <SituacoesSection />
         <ProblemaSolucaoSection />
         <PersuasaoOcultaSection />
         <OfertaSection />
