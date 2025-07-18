@@ -51,9 +51,6 @@ export function DepoimentosSection() {
       <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-center">
         Veja o que quem já comprou está dizendo:
       </h2>
-      <p className="mt-2 text-lg text-center text-muted-foreground">
-        Histórias reais de mulheres que transformaram suas vidas
-      </p>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
         {testimonialsData.map((testimonial) => (
           <Card
