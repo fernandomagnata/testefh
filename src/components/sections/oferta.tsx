@@ -1,5 +1,16 @@
+
 import { Button } from "@/components/ui/button";
+import { Check } from "lucide-react";
 import Link from "next/link";
+
+const bonusItems = [
+  { name: "Aulão de VSM Completo", value: "R$ 497" },
+  { name: "Os 7 Passos Para Reconquistar Qualquer Mulher", value: "R$ 97" },
+  { name: "Como funciona a cabeça das mulheres", value: "R$ 147" },
+  { name: "Como Ser o Homem Ideal para Ela", value: "R$ 127" },
+  { name: "Massagem e Prazer", value: "R$ 197" },
+  { name: "Comunidade V.S.M.", value: "Valor imensurável" },
+];
 
 export function OfertaSection() {
   return (
@@ -12,6 +23,18 @@ export function OfertaSection() {
           <p className="mt-4 text-lg text-neutral-300">
             Acesso ao Aulão de V.S.M. + bônus por menos de um café por dia.
           </p>
+
+          <div className="mt-8 text-left space-y-3">
+            {bonusItems.map((item, index) => (
+              <div key={index} className="flex items-start justify-between gap-4">
+                <div className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span className="text-neutral-300">{item.name}</span>
+                </div>
+                <span className="text-neutral-400 whitespace-nowrap">{item.value}</span>
+              </div>
+            ))}
+          </div>
           
           <div className="mt-12">
             <p className="text-lg text-neutral-400">De <span className="line-through">R$ 147,00</span></p>
