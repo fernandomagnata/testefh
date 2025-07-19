@@ -24,7 +24,7 @@ import * as TabsPrimitive from "@radix-ui/react-tabs"
 import * as ToastPrimitives from "@radix-ui/react-toast"
 import * as TooltipPrimitive from "@radix-ui/react-tooltip"
 
-import { ChevronDown, X, Check, Circle, ChevronRight, ArrowLeft, ArrowRight, PanelLeft } from "lucide-react"
+import { ChevronDown, X, Check, Circle, ChevronRight, ArrowLeft, ArrowRight, PanelLeft, ArrowUp, Star } from "lucide-react"
 import { cva, type VariantProps } from "class-variance-authority"
 import { DayPicker } from "react-day-picker"
 import {
@@ -41,8 +41,8 @@ import useEmblaCarousel, {
 import * as RechartsPrimitive from "recharts"
 
 import { cn } from "@/app/lib/utils"
-import { useToast } from "@/app/hooks/use-toast"
-import { useIsMobile } from "@/app/hooks/use-mobile"
+import { useToast } from "@/app/hooks"
+
 
 // Button (Needed by many components)
 const buttonVariants = cva(
@@ -2592,3 +2592,71 @@ const TooltipContent = React.forwardRef<
 ))
 TooltipContent.displayName = TooltipPrimitive.Content.displayName
 export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider }
+
+
+// FloatingCtaButton
+export function FloatingCtaButton() {
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  const handleScroll = () => {
+    const offerSection = document.getElementById('oferta');
+    if (offerSection) {
+      const { top } = offerSection.getBoundingClientRect();
+      // Show button if the user has scrolled past the top of the offer section
+      if (top < window.innerHeight) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    }
+  };
+
+  const scrollToOffer = () => {
+    const offerSection = document.getElementById('oferta');
+    if (offerSection) {
+      offerSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
+  React.useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    // Initial check in case the page loads past the offer section
+    handleScroll();
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <Button
+      onClick={scrollToOffer}
+      className={cn(
+        'fixed bottom-6 right-6 z-50 h-14 w-14 rounded-full bg-primary/80 p-0 shadow-lg backdrop-blur-sm transition-opacity duration-300 hover:bg-primary hover:scale-110 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background',
+        isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+      )}
+      aria-label="Voltar para a oferta"
+      tabIndex={isVisible ? 0 : -1}
+    >
+      <ArrowUp className="h-7 w-7 text-primary-foreground" />
+    </Button>
+  );
+}
+
+// StarRating
+interface StarRatingProps {
+  rating: number;
+  maxRating?: number;
+}
+
+export function StarRating({ rating, maxRating = 5 }: StarRatingProps) {
+  return (
+    <div className="flex items-center">
+      {Array.from({ length: maxRating }).map((_, index) => (
+        <Star
+          key={index}
+          className={`w-4 h-4 ${index < rating ? 'text-yellow-400 fill-yellow-400' : 'text-muted-foreground/50'}`}
+        />
+      ))}
+    </div>
+  );
+}

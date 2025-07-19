@@ -12,10 +12,10 @@ import {
   BonusSection,
   PerguntasRespostasSection,
   GarantiaSection,
-  FinalCtaSection
+  FinalCtaSection,
+  FooterSection
 } from '@/app/components/sections';
-import { FooterSection } from '@/app/components/sections/footer';
-import { FloatingCtaButton } from '@/app/components/shared/floating-cta-button';
+import { FloatingCtaButton } from '@/app/components/ui';
 
 export default function Home() {
   return (

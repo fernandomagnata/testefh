@@ -1,9 +1,8 @@
-
 'use client';
 
 import Link from "next/link";
 import Image from 'next/image';
-import type { QAItem } from "@/app/lib/types";
+import type { QAItem } from "@/app/lib/utils";
 import { BrainCircuit, Users, BookOpen, Gift, ShieldCheck, Package, XCircle, CheckCircle, AlertTriangle, Check, TrendingUp, X, MousePointerClick, CreditCard, CheckSquare } from "lucide-react";
 
 import { Button, Card, CardContent, CardHeader, CardTitle, CardDescription, Avatar, AvatarFallback, AvatarImage, Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/app/components/ui";
@@ -720,5 +719,32 @@ export function SituacoesSection() {
         <p className="font-semibold text-primary">Enquanto você fica na sua, outros homens estão levando as mulheres que você quer.</p>
       </div>
     </section>
+  );
+}
+
+export function FooterSection() {
+  return (
+    <footer className="w-full bg-background py-8">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-2 text-center text-sm text-muted-foreground">
+        <p>Magnetismo Oculto © 2025</p>
+        <div className="flex justify-center gap-2">
+          <Link href="/legal/politica-de-privacidade" className="hover:text-primary transition-colors">
+            Política de Privacidade
+          </Link>
+          <span>|</span>
+          <Link href="/legal/termos-de-uso" className="hover:text-primary transition-colors">
+            Termos de Uso
+          </Link>
+        </div>
+      </div>
+      <div className="container mx-auto max-w-5xl text-center text-xs text-muted-foreground/70 mt-8 space-y-4 px-4">
+        <p>
+          ESTE SITE NÃO É do FACEBOOK: Este site não faz parte do site do Facebook ou do Facebook Inc. Além disso, este site NÃO é endossado pelo Facebook de nenhuma maneira. FACEBOOK é uma marca comercial independente da FACEBOOK, Inc.
+        </p>
+        <p>
+          Os resultados referentes ao serviço foram avaliados e comprovados por nossos clientes. Não garantimos os resultados iguais para todos, estes variam de pessoa para pessoa dependendo de diversos fatores individuais. As informações fornecidas neste site destina-se ao seu conhecimento geral e não garantimos um resultado específico, todo resultado será de inteira responsabilidade do cliente. Essa página/produto não tem vínculo com o Facebook.
+        </p>
+      </div>
+    </footer>
   );
 }
