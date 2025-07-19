@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Button } from "@/app/components/ui";
 
 export function FooterSection() {
   return (

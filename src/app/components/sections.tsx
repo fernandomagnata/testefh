@@ -1,16 +1,12 @@
 
 'use client';
 
-import { Button } from "@/app/components/ui/button";
 import Link from "next/link";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/app/components/ui/card";
-import { BookOpen, Gift, ShieldCheck, Package, XCircle, CheckCircle, AlertTriangle, Check, TrendingUp, X, MousePointerClick, CreditCard, CheckSquare } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from '@/app/components/ui/avatar';
 import Image from 'next/image';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/app/components/ui/carousel";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/app/components/ui/accordion";
 import type { QAItem } from "@/app/lib/types";
-import { BrainCircuit, Users } from "lucide-react";
+import { BrainCircuit, Users, BookOpen, Gift, ShieldCheck, Package, XCircle, CheckCircle, AlertTriangle, Check, TrendingUp, X, MousePointerClick, CreditCard, CheckSquare } from "lucide-react";
+
+import { Button, Card, CardContent, CardHeader, CardTitle, CardDescription, Avatar, AvatarFallback, AvatarImage, Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/app/components/ui";
 
 export function AberturaSection() {
   return (
@@ -114,7 +110,7 @@ export function DepoimentosSection() {
     <section className="flex flex-col items-center">
       <div className="mb-16 text-center w-full max-w-4xl">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-          Assista e <span className="text-primary">Descubra</span> Como É Simples Despertar Seu Magnetismo
+          Veja o depoimento do Rafael, que saiu da friendzone eterna e conquistou a atenção que sempre quis em menos de 14 dias usando o método.
         </h2>
         <p className="mt-4 max-w-2xl text-lg text-center text-muted-foreground mx-auto">
           Veja o depoimento do Rafael, que saiu da friendzone eterna e conquistou a atenção que sempre quis em menos de 14 dias usando o método.

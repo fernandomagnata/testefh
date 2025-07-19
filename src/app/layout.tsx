@@ -1,6 +1,6 @@
 import type {Metadata} from 'next';
 import './globals.css';
-import { Toaster } from "@/app/components/ui/toaster"
+import { Toaster } from "@/app/components/ui";
 
 export const metadata: Metadata = {
   title: 'Luminous Sales Page',

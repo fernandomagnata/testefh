@@ -1,5 +1,5 @@
 
-import { Button } from '@/app/components/ui/button';
+import { Button } from '@/app/components/ui';
 import { FooterSection } from '@/app/components/sections/footer';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
