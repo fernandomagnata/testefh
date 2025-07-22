@@ -19,7 +19,13 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-        <link rel="icon" href="https://imgur.com/DOgvSRt.png"/>
+        
+        {/* Favicon Links */}
+        <link rel="icon" href="https://imgur.com/DOgvSRt.png?v=1" type="image/png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="https://imgur.com/DOgvSRt.png?v=1" />
+        <link rel="icon" type="image/png" sizes="32x32" href="https://imgur.com/DOgvSRt.png?v=1" />
+        <link rel="icon" type="image/png" sizes="16x16" href="https://imgur.com/DOgvSRt.png?v=1" />
+
 
         {/* Scripts externos com melhor performance */}
         <script
