@@ -1,7 +1,9 @@
 
+
 'use client';
 
 import VturbPlayer from "./VturbPlayer";
+import VturbPlayer2 from "./VturbPlayer2";
 import Link from "next/link";
 import Image from 'next/image';
 import type { QAItem } from "@/app/lib/utils";
@@ -110,14 +112,7 @@ export function DepoimentosSection() {
           Veja o depoimento do Rafael, que saiu da friendzone eterna e conquistou a atenção que sempre quis em menos de 14 dias usando o método.
         </p>
         <div className="mt-8 w-full max-w-2xl mx-auto aspect-video bg-card rounded-lg border border-primary/20 flex items-center justify-center shadow-lg overflow-hidden">
-           <iframe
-            className="w-full h-full"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+           <VturbPlayer2 />
         </div>
       </div>
 
@@ -394,7 +389,7 @@ export function OfertaSection() {
     <section id="oferta" className="flex flex-col items-center">
       <div className="w-full max-w-lg bg-black text-white py-12 px-6 sm:px-10 rounded-2xl border-2 border-primary/30 shadow-2xl shadow-primary/10">
         <div className="max-w-md mx-auto text-center">
-          <div className="relative w-full h-64 mb-8">
+          <div className="relative w-full h-96 mb-8">
             <Image
               src="https://imgur.com/K446oWL.png"
               alt="Magnetismo Oculto - A Ciência da Atração Invisível"
@@ -644,21 +639,23 @@ export function ResultadosSection() {
           }}
           className="w-full"
         >
-          <CarouselContent className="-ml-2">
+          <CarouselContent className="-ml-4">
             {images.map((image, index) => (
-              <CarouselItem key={index} className="basis-4/5 md:basis-1/3 pl-2">
-              <div className="p-1">
-                <div className="relative aspect-[9/14] w-full overflow-hidden rounded-lg">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    className="object-contain" // Alterado de object-cover para object-contain
-                    data-ai-hint={image.hint}
-                  />
+              <CarouselItem key={index} className="basis-4/5 md:basis-1/3 pl-4">
+                <div className="p-1">
+                  <Card className="overflow-hidden border-2 border-transparent bg-gradient-to-br from-primary/20 to-card shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
+                    <CardContent className="p-0 flex items-center justify-center aspect-[9/16] relative">
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        fill
+                        className="object-contain"
+                        data-ai-hint={image.hint}
+                      />
+                    </CardContent>
+                  </Card>
                 </div>
-              </div>
-            </CarouselItem>            
+              </CarouselItem>
             ))}
           </CarouselContent>
           <CarouselPrevious className="text-primary hover:text-primary-foreground hover:bg-primary" />
