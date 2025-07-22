@@ -15,7 +15,7 @@ import {
   FinalCtaSection,
   FooterSection
 } from '@/app/components/sections';
-import { FloatingCtaButton } from '@/app/components/ui';
+import { FloatingCtaButton } from '@/app/components/shared/floating-cta-button';
 
 export default function Home() {
   return (

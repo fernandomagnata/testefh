@@ -391,7 +391,7 @@ export function OfertaSection() {
         <div className="max-w-md mx-auto text-center">
           <div className="relative w-full h-96 mb-8">
             <Image
-              src="https://imgur.com/K446oWL.png"
+              src="https://imgur.com/MFzEPpx.png"
               alt="Magnetismo Oculto - A Ciência da Atração Invisível"
               layout="fill"
               objectFit="contain"

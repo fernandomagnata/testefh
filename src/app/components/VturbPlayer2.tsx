@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-export default function VturbPlayer() {
+export default function VturbPlayer2() {
   const [iframeSrc, setIframeSrc] = useState('');
 
   useEffect(() => {
