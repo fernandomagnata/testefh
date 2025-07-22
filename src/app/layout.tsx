@@ -42,6 +42,12 @@ export default function RootLayout({
           async 
           defer
         />
+
+        <script 
+          src="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/sdk.js" 
+          async 
+          defer 
+        />
       </head>
       <body className="font-body antialiased" suppressHydrationWarning={true}>
         {children}

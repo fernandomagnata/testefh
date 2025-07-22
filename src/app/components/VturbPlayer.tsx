@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function VturbPlayer() {
   const [iframeSrc, setIframeSrc] = useState('');
@@ -13,18 +13,6 @@ export default function VturbPlayer() {
       )}`;
       setIframeSrc(src);
     }
-    
-    // Also, load the Vturb SDK script
-    const script = document.createElement('script');
-    script.src =
-      'https://scripts.converteai.net/lib/js/smartplayer-wc/v4/sdk.js';
-    script.async = true;
-    document.head.appendChild(script);
-
-    return () => {
-      // Clean up the script when the component unmounts
-      document.head.removeChild(script);
-    };
   }, []); // Empty dependency array ensures this runs only once on mount
 
   // Render a placeholder or nothing until the src is ready
