@@ -1,5 +1,6 @@
 'use client';
 
+import VturbPlayer from "./VturbPlayer";
 import Link from "next/link";
 import Image from 'next/image';
 import type { QAItem } from "@/app/lib/utils";
@@ -17,16 +18,9 @@ export function AberturaSection() {
         Descubra o método científico secreto que transforma homens invisíveis em magnetos de atração feminina em menos de 21 dias.
       </p>
       <div className="my-8 w-full max-w-3xl aspect-video bg-card rounded-lg border border-primary/20 overflow-hidden">
-        <iframe
-          className="w-full h-full"
-          src="https://www.youtube.com/embed/jfKfPfyJRdk"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+        <VturbPlayer />
       </div>
-      <Link href="https://www.youtube.com/" target="_blank">
+      <Link href="https://payment.ticto.app/O37ED94FD" target="_blank">
         <Button size="lg" className="font-bold text-lg bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50">
           Comece Agora
         </Button>
@@ -80,25 +74,25 @@ export function BonusSection() {
 const testimonialsData = [
   {
     name: 'Junior Costa',
-    avatar: 'https://placehold.co/100x100.png',
+    avatar: 'https://imgur.com/kGvG4cB.png',
     quote:
       'Sempre fui o cara invisível que as mulheres ignoravam. Depois do Magnetismo Oculto, conquistei não só a garota que eu admirava há 2 anos, mas ela que demonstrou interesse por mim! Hoje tenho várias opções. Realmente funciona!',
   },
   {
     name: 'Lucas Ferreira',
-    avatar: 'https://placehold.co/100x100.png',
+    avatar: 'https://imgur.com/LpF08Ok.png',
     quote:
       'Eu tinha zero sucesso com mulheres. Apliquei as técnicas por 2 semanas e já estava saindo com garotas que antes nem me davam bola. Meus amigos ficaram impressionados com a transformação. Virei outro homem!',
   },
   {
     name: 'Gabriel Santos',
-    avatar: 'https://placehold.co/100x100.png',
+    avatar: 'https://imgur.com/zgtmW8I.png',
     quote:
       'Sempre fui o "amigo" das mulheres. Friendzone era minha casa. Depois do curso, descobri como ser visto como homem de verdade. Semana passada uma ex me procurou perguntando "o que você mudou? Você está diferente".',
   },
   {
     name: 'Bruno Oliveira',
-    avatar: 'https://placehold.co/100x100.png',
+    avatar: 'https://imgur.com/bdCZhry.png',
     quote:
       'Cara, isso mudou minha vida! Antes eu travava perto de mulher bonita. Agora eu comando a conversa e elas ficam interessadas. No último fim de semana consegui 3 contatos sem forçar nada. Sou uma nova pessoa!',
   },
@@ -247,7 +241,7 @@ Pare de adiar.`}
         <span>Clique agora e aprenda como conquistar a sua mulher dos sonhos:</span>
       </h3>
       
-      <Link href="https://www.youtube.com/" target="_blank">
+      <Link href="https://payment.ticto.app/O37ED94FD" target="_blank">
         <Button size="lg" className="mt-8 h-16 w-full max-w-md font-bold text-2xl bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_35px_hsl(var(--primary))] shadow-[0_0_20px_hsl(var(--primary))] border-2 border-primary/50 rounded-lg">
           QUERO AGORA
         </Button>
@@ -309,7 +303,7 @@ export function IntroducaoSection() {
       </div>
       <div className="relative h-80 w-full rounded-xl overflow-hidden shadow-2xl shadow-primary/20">
         <Image
-          src="https://placehold.co/600x400.png"
+          src="https://imgur.com/Xaaz0c3.png"
           alt="Homem e mulher conversando em um bar"
           layout="fill"
           objectFit="cover"
@@ -401,7 +395,7 @@ export function OfertaSection() {
         <div className="max-w-md mx-auto text-center">
           <div className="relative w-full h-64 mb-8">
             <Image
-              src="https://placehold.co/600x400.png"
+              src="https://imgur.com/K446oWL.png"
               alt="Magnetismo Oculto - A Ciência da Atração Invisível"
               layout="fill"
               objectFit="contain"
@@ -435,7 +429,7 @@ export function OfertaSection() {
             </p>
           </div>
 
-          <Link href="https://www.youtube.com/" target="_blank">
+          <Link href="https://payment.ticto.app/O37ED94FD" target="_blank">
             <Button 
               size="lg" 
               className="mt-10 h-auto px-12 py-4 bg-primary text-primary-foreground text-lg font-bold rounded-lg transition-all duration-300 ease-in-out hover:bg-primary/90 hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50"
@@ -628,11 +622,11 @@ export function ProblemaSolucaoSection() {
 }
 
 const images = [
-  { src: "https://placehold.co/400x600.png", alt: "Resultado de aluno 1", hint: "chat screenshot" },
-  { src: "https://placehold.co/400x600.png", alt: "Resultado de aluno 2", hint: "chat screenshot" },
-  { src: "https://placehold.co/400x600.png", alt: "Resultado de aluno 3", hint: "chat screenshot" },
-  { src: "https://placehold.co/400x600.png", alt: "Resultado de aluno 4", hint: "chat screenshot" },
-  { src: "https://placehold.co/400x600.png", alt: "Resultado de aluno 5", hint: "chat screenshot" },
+  { src: "https://imgur.com/A6ZVX8S.png", alt: "Resultado de aluno 1", hint: "chat screenshot" },
+  { src: "https://imgur.com/6BEKjME.png", alt: "Resultado de aluno 2", hint: "chat screenshot" },
+  { src: "https://imgur.com/A6ZVX8S.png", alt: "Resultado de aluno 3", hint: "chat screenshot" },
+  { src: "https://imgur.com/1UglZ9R.png", alt: "Resultado de aluno 4", hint: "chat screenshot" },
+  { src: "https://imgur.com/um33MLj.png", alt: "Resultado de aluno 5", hint: "chat screenshot" },
 ];
 
 export function ResultadosSection() {
@@ -652,18 +646,18 @@ export function ResultadosSection() {
           <CarouselContent className="-ml-2">
             {images.map((image, index) => (
               <CarouselItem key={index} className="basis-4/5 md:basis-1/3 pl-2">
-                <div className="p-1">
-                  <div className="relative aspect-[9/14] w-full overflow-hidden rounded-lg">
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      fill
-                      className="object-cover"
-                      data-ai-hint={image.hint}
-                    />
-                  </div>
+              <div className="p-1">
+                <div className="relative aspect-[9/14] w-full overflow-hidden rounded-lg">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-contain" // Alterado de object-cover para object-contain
+                    data-ai-hint={image.hint}
+                  />
                 </div>
-              </CarouselItem>
+              </div>
+            </CarouselItem>            
             ))}
           </CarouselContent>
           <CarouselPrevious className="text-primary hover:text-primary-foreground hover:bg-primary" />
