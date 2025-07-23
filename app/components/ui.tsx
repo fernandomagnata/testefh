@@ -40,7 +40,7 @@ import useEmblaCarousel, {
 } from "embla-carousel-react"
 import * as RechartsPrimitive from "recharts"
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/app/lib/utils"
 import { useToast } from "@/app/hooks"
 
 

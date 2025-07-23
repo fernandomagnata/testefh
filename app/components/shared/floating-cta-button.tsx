@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { ArrowUp } from 'lucide-react';
 import { Button } from '@/app/components/ui';
-import { cn } from '@/lib/utils';
+import { cn } from '@/app/lib/utils';
 
 export function FloatingCtaButton() {
   const [isVisible, setIsVisible] = useState(false);
