@@ -24,7 +24,7 @@ import * as TabsPrimitive from "@radix-ui/react-tabs"
 import * as ToastPrimitives from "@radix-ui/react-toast"
 import * as TooltipPrimitive from "@radix-ui/react-tooltip"
 
-import { ChevronDown, X, Check, Circle, ChevronRight, ArrowLeft, ArrowRight, PanelLeft, ArrowUp, Star } from "lucide-react"
+import { ChevronDown, X, Check, Circle, ChevronRight, ArrowLeft, ArrowRight, PanelLeft, ArrowUp, Star, ChevronUp } from "lucide-react"
 import { cva, type VariantProps } from "class-variance-authority"
 import { DayPicker } from "react-day-picker"
 import {
