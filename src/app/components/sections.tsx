@@ -4,10 +4,10 @@ import VturbPlayer from "./VturbPlayer";
 import VturbPlayer2 from "./VturbPlayer2";
 import Link from "next/link";
 import Image from 'next/image';
-import type { QAItem } from "@/lib/utils";
+import type { QAItem } from "@/app/lib/utils";
 import { BrainCircuit, Users, BookOpen, Gift, ShieldCheck, Package, XCircle, CheckCircle, AlertTriangle, Check, TrendingUp, X, MousePointerClick, CreditCard, CheckSquare } from "lucide-react";
 
-import { Button, Card, CardContent, CardHeader, CardTitle, CardDescription, Avatar, AvatarFallback, AvatarImage, Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui";
+import { Button, Card, CardContent, CardHeader, CardTitle, CardDescription, Avatar, AvatarFallback, AvatarImage, Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/app/components/ui";
 
 export function AberturaSection() {
   return (
@@ -718,11 +718,11 @@ export function FooterSection() {
       <div className="container mx-auto flex flex-col items-center justify-center gap-2 text-center text-sm text-muted-foreground">
         <p>Magnetismo Oculto © 2025</p>
         <div className="flex justify-center gap-2">
-          <Link href="/legal/politica-de-privacidade" className="hover:text-primary transition-colors">
+          <Link href="/politica-de-privacidade" className="hover:text-primary transition-colors">
             Política de Privacidade
           </Link>
           <span>|</span>
-          <Link href="/legal/termos-de-uso" className="hover:text-primary transition-colors">
+          <Link href="/termos-de-uso" className="hover:text-primary transition-colors">
             Termos de Uso
           </Link>
         </div>
