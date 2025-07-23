@@ -1,4 +1,3 @@
-
 import { Button } from '@/app/components/ui';
 import { FooterSection } from '@/app/components/sections/footer';
 import { ArrowLeft } from 'lucide-react';
@@ -112,5 +111,3 @@ export default function TermosDeUsoPage() {
     </div>
   );
 }
-
-    

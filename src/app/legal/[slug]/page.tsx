@@ -1,5 +1,3 @@
-
-
 import { Button } from '@/app/components/ui';
 import { FooterSection } from '@/app/components/sections';
 import { ArrowLeft } from 'lucide-react';
@@ -73,7 +71,7 @@ function PoliticaDePrivacidadeContent() {
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">5. Segurança dos Dados</h2>
               <p>A segurança das suas informações é muito importante para nós. Empregamos medidas de segurança técnicas e organizacionais razoáveis para proteger as informações que coletamos contra acesso não autorizado, divulgação, alteração ou destruição. No entanto, nenhuma transmissão de dados pela Internet ou método de armazenamento eletrônico é 100% seguro. Portanto, embora nos esforcemos para usar meios comercialmente aceitáveis para proteger suas informações pessoais, não podemos garantir sua segurança absoluta.</p>
-            </section>
+          </section>
   
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">6. Seus Direitos de Proteção de Dados (LGPD)</h2>

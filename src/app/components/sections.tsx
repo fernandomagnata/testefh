@@ -1,15 +1,13 @@
-
-
 'use client';
 
 import VturbPlayer from "./VturbPlayer";
 import VturbPlayer2 from "./VturbPlayer2";
 import Link from "next/link";
 import Image from 'next/image';
-import type { QAItem } from "@/app/lib/utils";
+import type { QAItem } from "@/lib/utils";
 import { BrainCircuit, Users, BookOpen, Gift, ShieldCheck, Package, XCircle, CheckCircle, AlertTriangle, Check, TrendingUp, X, MousePointerClick, CreditCard, CheckSquare } from "lucide-react";
 
-import { Button, Card, CardContent, CardHeader, CardTitle, CardDescription, Avatar, AvatarFallback, AvatarImage, Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/app/components/ui";
+import { Button, Card, CardContent, CardHeader, CardTitle, CardDescription, Avatar, AvatarFallback, AvatarImage, Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui";
 
 export function AberturaSection() {
   return (
