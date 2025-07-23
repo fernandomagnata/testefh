@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[images]
+  remote_images = [
+    "https://placehold.co/.*",
+    "https://drive.google.com/.*",
+    "https://.*.googleusercontent.com/.*",
+    "https://imgur.com/.*",
+    "https://vtvm1.cc.vt.edu/.*"
+  ]
