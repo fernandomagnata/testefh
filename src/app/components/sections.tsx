@@ -12,7 +12,7 @@ import { Button, Card, CardContent, CardHeader, CardTitle, CardDescription, Avat
 export function AberturaSection() {
   return (
     <section className="text-center flex flex-col items-center">
-      <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-primary/70 pb-4">
+      <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-primary/70 pb-4">
         Transforme-se no homem que as mulheres desejam, mesmo sem dizer uma palavra.
       </h1>
       <p className="mt-4 max-w-2xl text-lg md:text-xl text-muted-foreground">
