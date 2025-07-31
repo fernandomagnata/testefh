@@ -12,11 +12,11 @@ import { Button, Card, CardContent, CardHeader, CardTitle, CardDescription, Avat
 export function AberturaSection() {
   return (
     <section className="text-center flex flex-col items-center">
-      <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-primary/70 pb-4">
-        Desbloqueie Seu Magnetismo Masculino Oculto
+      <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-primary/70 pb-4">
+        Transforme-se no homem que as mulheres desejam, mesmo sem dizer uma palavra.
       </h1>
       <p className="mt-4 max-w-2xl text-lg md:text-xl text-muted-foreground">
-        Descubra o método científico secreto que transforma homens invisíveis em magnetos de atração feminina em menos de 21 dias.
+        Descubra o que transforma homens invisíveis em magnetos de atração feminina em menos de 21 dias.
       </p>
       <div className="my-8 w-full max-w-3xl aspect-video bg-card rounded-lg border border-primary/20 overflow-hidden">
         <VturbPlayer />
