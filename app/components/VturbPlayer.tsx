@@ -8,52 +8,13 @@ declare global {
   }
 }
 
-interface VturbPlayerProps {
-  onTimeUpdate?: () => void;
-}
-
-export default function VturbPlayer({ onTimeUpdate }: VturbPlayerProps) {
-  const playerRef = useRef<HTMLIFrameElement>(null);
-  const eventCalledRef = useRef(false);
+export default function VturbPlayer() {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
     // This effect runs only on the client, after the component has mounted.
     setIsClient(true);
   }, []);
-
-  useEffect(() => {
-    if (!isClient) return;
-    // Handler para a mensagem do player
-    const handlePlayerMessage = (event: MessageEvent) => {
-      try {
-        if (
-          event.source === playerRef.current?.contentWindow &&
-          event.data.type === 'timeupdate' &&
-          !eventCalledRef.current
-        ) {
-          const currentTime = event.data.value.currentTime;
-          // Alterado para 10 segundos para teste
-          if (currentTime >= 10) {
-            if (onTimeUpdate) {
-              onTimeUpdate();
-            }
-            eventCalledRef.current = true; // Marca que o evento já foi chamado
-          }
-        }
-      } catch (error) {
-        // Ignora erros de segurança que podem acontecer ao acessar event.source
-      }
-    };
-    
-    // Adiciona o listener de mensagem do iframe
-    window.addEventListener('message', handlePlayerMessage);
-    
-    // Cleanup: remove o listener quando o componente é desmontado
-    return () => {
-      window.removeEventListener('message', handlePlayerMessage);
-    };
-  }, [isClient, onTimeUpdate]);
 
   // On the server, and on the initial client render, render a placeholder.
   if (!isClient) {
@@ -78,7 +39,6 @@ export default function VturbPlayer({ onTimeUpdate }: VturbPlayerProps) {
     >
       <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
         <iframe
-          ref={playerRef}
           id="ifr_68892802472c92b73bb99bf1"
           frameBorder="0"
           allowFullScreen
