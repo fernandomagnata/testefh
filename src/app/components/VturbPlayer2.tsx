@@ -37,6 +37,7 @@ export default function VturbPlayer2() {
             id="ifr_687ec06b1cdf2c545b3df1b0"
             frameBorder="0"
             allowFullScreen
+            allow="autoplay; encrypted-media"
             src={iframeSrc}
             style={{
               position: 'absolute',
@@ -51,4 +52,3 @@ export default function VturbPlayer2() {
       </div>
     );
   }
-  

@@ -2,12 +2,6 @@
 
 import { useEffect, useRef, useState } from 'react';
 
-declare global {
-  interface Window {
-    smartplayer: any;
-  }
-}
-
 interface VturbPlayerProps {
   onTimeUpdate?: () => void;
 }
@@ -27,20 +21,30 @@ export default function VturbPlayer({ onTimeUpdate }: VturbPlayerProps) {
 
     // Handler para a mensagem do player
     const handlePlayerMessage = (event: MessageEvent) => {
-      // Verifica se o evento é do tipo 'timeupdate' e se o evento ainda não foi acionado
-      if (event.data.type === 'timeupdate' && !eventCalledRef.current) {
-        // Acessa o tempo atual do vídeo a partir dos dados do evento
-        const currentTime = event.data.value.currentTime;
+      // Adiciona uma verificação de segurança para a origem do evento
+      if (event.origin !== 'https://scripts.converteai.net') {
+        return;
+      }
+      
+      try {
+        // Verifica se o evento é do tipo 'timeupdate' e se o evento ainda não foi acionado
+        if (event.data.type === 'timeupdate' && !eventCalledRef.current) {
+          // Acessa o tempo atual do vídeo a partir dos dados do evento
+          const currentTime = event.data.value.currentTime;
 
-        // Verifica se o tempo atual do vídeo é de pelo menos 275 segundos (4 minutos e 35 segundos)
-        if (currentTime >= 275) {
-          // Se a função onTimeUpdate foi fornecida, chama-a
-          if (onTimeUpdate) {
-            onTimeUpdate();
+          // Verifica se o tempo atual do vídeo é de pelo menos 10 segundos
+          if (currentTime >= 10) {
+            // Se a função onTimeUpdate foi fornecida, chama-a
+            if (onTimeUpdate) {
+              onTimeUpdate();
+            }
+            // Marca o evento como acionado para que não seja chamado novamente
+            eventCalledRef.current = true;
           }
-          // Marca o evento como acionado para que não seja chamado novamente
-          eventCalledRef.current = true;
         }
+      } catch (error) {
+        // Ignora erros que podem acontecer ao processar o evento
+        console.error("Error handling player message:", error);
       }
     };
 
@@ -68,7 +72,7 @@ export default function VturbPlayer({ onTimeUpdate }: VturbPlayerProps) {
   // Once the component has mounted on the client, render the iframe with the correct src.
   const iframeSrc = `https://scripts.converteai.net/9731981d-e17b-4330-96ba-c9a74315f15c/players/68892802472c92b73bb99bf1/v4/embed.html?vl=${encodeURIComponent(
     window.location.href
-  )}&pop=0`;
+  )}`;
 
   return (
     <div
