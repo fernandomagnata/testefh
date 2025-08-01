@@ -69,7 +69,7 @@ export default function VturbPlayer({ onTimeUpdate }: VturbPlayerProps) {
   // Once the component has mounted on the client, render the iframe with the correct src.
   const iframeSrc = `https://scripts.converteai.net/9731981d-e17b-4330-96ba-c9a74315f15c/players/68892802472c92b73bb99bf1/v4/embed.html?vl=${encodeURIComponent(
     window.location.href
-  )}&pop=0&time=1`;
+  )}&pop=0`;
 
   return (
     <div
