@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 declare global {
   interface Window {
@@ -15,10 +15,11 @@ interface VturbPlayerProps {
 export default function VturbPlayer({ onTimeUpdate }: VturbPlayerProps) {
   const playerRef = useRef<HTMLIFrameElement>(null);
   const eventCalledRef = useRef(false);
-  const isClient = typeof window !== 'undefined';
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    if (!isClient) return;
+    // This effect runs only on the client, after the component has mounted.
+    setIsClient(true);
 
     // Handler para a mensagem do player
     const handlePlayerMessage = (event: MessageEvent) => {
@@ -49,19 +50,20 @@ export default function VturbPlayer({ onTimeUpdate }: VturbPlayerProps) {
     return () => {
       window.removeEventListener('message', handlePlayerMessage);
     };
-  }, [onTimeUpdate, isClient]);
+  }, [onTimeUpdate]);
 
-  // Apenas renderiza o iframe no lado do cliente
+  // On the server, and on the initial client render, render a placeholder.
   if (!isClient) {
     return (
       <div id="ifr_68892802472c92b73bb99bf1_wrapper" style={{ width: '100%', margin: '0 auto' }}>
         <div style={{ padding: '56.25% 0 0 0', position: 'relative', backgroundColor: '#000' }}>
-          {/* Placeholder para o servidor */}
+          {/* Placeholder for the server */}
         </div>
       </div>
     );
   }
 
+  // Once the component has mounted on the client, render the iframe with the correct src.
   const iframeSrc = `https://scripts.converteai.net/9731981d-e17b-4330-96ba-c9a74315f15c/players/68892802472c92b73bb99bf1/v4/embed.html?vl=${encodeURIComponent(
     window.location.href
   )}&pop=0&time=1`;
