@@ -21,11 +21,6 @@ export default function VturbPlayer({ onTimeUpdate }: VturbPlayerProps) {
 
     // Handler para a mensagem do player
     const handlePlayerMessage = (event: MessageEvent) => {
-      // Adiciona uma verificação de segurança para a origem do evento
-      if (event.origin !== 'https://scripts.converteai.net') {
-        return;
-      }
-      
       try {
         // Verifica se o evento é do tipo 'timeupdate' e se o evento ainda não foi acionado
         if (event.data.type === 'timeupdate' && !eventCalledRef.current) {
@@ -72,7 +67,7 @@ export default function VturbPlayer({ onTimeUpdate }: VturbPlayerProps) {
   // Once the component has mounted on the client, render the iframe with the correct src.
   const iframeSrc = `https://scripts.converteai.net/9731981d-e17b-4330-96ba-c9a74315f15c/players/68892802472c92b73bb99bf1/v4/embed.html?vl=${encodeURIComponent(
     window.location.href
-  )}`;
+  )}&time=0`;
 
   return (
     <div
