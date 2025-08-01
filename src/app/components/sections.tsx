@@ -9,11 +9,7 @@ import { BrainCircuit, Users, BookOpen, Gift, ShieldCheck, Package, XCircle, Che
 
 import { Button, Card, CardContent, CardHeader, CardTitle, CardDescription, Avatar, AvatarFallback, AvatarImage, Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/app/components/ui";
 
-interface AberturaSectionProps {
-  onTimeUpdate: () => void;
-}
-
-export function AberturaSection({ onTimeUpdate }: AberturaSectionProps) {
+export function AberturaSection() {
   return (
     <section className="text-center flex flex-col items-center">
       <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-primary/70 pb-4">
@@ -23,7 +19,7 @@ export function AberturaSection({ onTimeUpdate }: AberturaSectionProps) {
         Descubra o que transforma homens invisíveis em magnetos de atração feminina em menos de 21 dias.
       </p>
       <div className="my-8 w-full max-w-3xl aspect-video bg-card rounded-lg border border-primary/20 overflow-hidden">
-        <VturbPlayer onTimeUpdate={onTimeUpdate} />
+        <VturbPlayer />
       </div>
       <Link href="https://payment.ticto.app/O37ED94FD" target="_blank">
         <Button size="lg" className="font-bold text-lg bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50">
