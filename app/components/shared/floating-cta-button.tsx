@@ -1,41 +1,20 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import { ArrowUp } from 'lucide-react';
 import { Button } from '@/app/components/ui';
 import { cn } from '@/app/lib/utils';
 
-export function FloatingCtaButton() {
-  const [isVisible, setIsVisible] = useState(false);
+interface FloatingCtaButtonProps {
+  isVisible: boolean;
+}
 
-  const handleScroll = () => {
-    const offerSection = document.getElementById('oferta');
-    if (offerSection) {
-      const { top } = offerSection.getBoundingClientRect();
-      // Show button if the user has scrolled past the top of the offer section
-      if (top < window.innerHeight) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    }
-  };
-
+export function FloatingCtaButton({ isVisible }: FloatingCtaButtonProps) {
   const scrollToOffer = () => {
     const offerSection = document.getElementById('oferta');
     if (offerSection) {
       offerSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    // Initial check in case the page loads past the offer section
-    handleScroll();
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <Button
