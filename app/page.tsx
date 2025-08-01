@@ -23,10 +23,10 @@ export default function Home() {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    // Inicia um temporizador para mostrar o conteúdo após 10 segundos.
+    // Inicia um temporizador para mostrar o conteúdo após 4 minutos e 35 segundos.
     const timer = setTimeout(() => {
       setShowContent(true);
-    }, 10000); // 10000 milissegundos = 10 segundos
+    }, 275000); // 275000 milissegundos = 4 minutos e 35 segundos
 
     // Limpa o temporizador se o componente for desmontado antes do tempo.
     return () => clearTimeout(timer);
