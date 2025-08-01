@@ -7,64 +7,61 @@ interface VturbPlayerProps {
 }
 
 export default function VturbPlayer({ onTimeUpdate }: VturbPlayerProps) {
-  const playerRef = useRef<HTMLIFrameElement>(null);
   const eventCalledRef = useRef(false);
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    // This effect runs only on the client, after the component has mounted.
+    // Garante que este código só rode no cliente, após a montagem.
     setIsClient(true);
   }, []);
 
   useEffect(() => {
-    if (!isClient) return;
+    if (!isClient) {
+      return;
+    }
 
-    // Handler para a mensagem do player
     const handlePlayerMessage = (event: MessageEvent) => {
-      try {
-        // Verifica se o evento é do tipo 'timeupdate' e se o evento ainda não foi acionado
-        if (event.data.type === 'timeupdate' && !eventCalledRef.current) {
-          // Acessa o tempo atual do vídeo a partir dos dados do evento
-          const currentTime = event.data.value.currentTime;
+      // Ignora eventos que não são do tipo 'timeupdate'.
+      if (event.data.type !== 'timeupdate') {
+        return;
+      }
+      
+      // Se o evento já foi chamado, não faz nada.
+      if (eventCalledRef.current) {
+        return;
+      }
 
-          // Verifica se o tempo atual do vídeo é de pelo menos 10 segundos
-          if (currentTime >= 10) {
-            // Se a função onTimeUpdate foi fornecida, chama-a
-            if (onTimeUpdate) {
-              onTimeUpdate();
-            }
-            // Marca o evento como acionado para que não seja chamado novamente
-            eventCalledRef.current = true;
-          }
+      const currentTime = event.data.value.currentTime;
+      
+      // Para teste, revela o conteúdo após 10 segundos.
+      if (currentTime >= 10) {
+        if (onTimeUpdate) {
+          onTimeUpdate();
         }
-      } catch (error) {
-        // Ignora erros que podem acontecer ao processar o evento
-        console.error("Error handling player message:", error);
+        eventCalledRef.current = true; // Marca que o evento foi disparado.
       }
     };
 
-    // Adiciona o listener de mensagem do iframe
     window.addEventListener('message', handlePlayerMessage);
 
-    // Cleanup: remove o listener quando o componente é desmontado
+    // Limpa o listener quando o componente for desmontado.
     return () => {
       window.removeEventListener('message', handlePlayerMessage);
     };
   }, [isClient, onTimeUpdate]);
 
-
-  // On the server, and on the initial client render, render a placeholder.
+  // Enquanto não estiver no cliente, renderiza um placeholder.
   if (!isClient) {
     return (
       <div id="ifr_68892802472c92b73bb99bf1_wrapper" style={{ width: '100%', margin: '0 auto' }}>
         <div style={{ padding: '56.25% 0 0 0', position: 'relative', backgroundColor: '#000' }}>
-          {/* Placeholder for the server */}
+          {/* Placeholder para o servidor */}
         </div>
       </div>
     );
   }
 
-  // Once the component has mounted on the client, render the iframe with the correct src.
+  // Renderiza o iframe no cliente, forçando o início no tempo 0.
   const iframeSrc = `https://scripts.converteai.net/9731981d-e17b-4330-96ba-c9a74315f15c/players/68892802472c92b73bb99bf1/v4/embed.html?vl=${encodeURIComponent(
     window.location.href
   )}&time=0`;
@@ -76,7 +73,6 @@ export default function VturbPlayer({ onTimeUpdate }: VturbPlayerProps) {
     >
       <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
         <iframe
-          ref={playerRef}
           id="ifr_68892802472c92b73bb99bf1"
           frameBorder="0"
           allowFullScreen
