@@ -20,7 +20,10 @@ export default function VturbPlayer({ onTimeUpdate }: VturbPlayerProps) {
   useEffect(() => {
     // This effect runs only on the client, after the component has mounted.
     setIsClient(true);
+  }, []);
 
+  useEffect(() => {
+    if (!isClient) return;
     // Handler para a mensagem do player
     const handlePlayerMessage = (event: MessageEvent) => {
       try {
@@ -30,8 +33,8 @@ export default function VturbPlayer({ onTimeUpdate }: VturbPlayerProps) {
           !eventCalledRef.current
         ) {
           const currentTime = event.data.value.currentTime;
-          // 4 minutos e 35 segundos = 275 segundos
-          if (currentTime >= 275) {
+          // Alterado para 10 segundos para teste
+          if (currentTime >= 10) {
             if (onTimeUpdate) {
               onTimeUpdate();
             }
@@ -50,7 +53,7 @@ export default function VturbPlayer({ onTimeUpdate }: VturbPlayerProps) {
     return () => {
       window.removeEventListener('message', handlePlayerMessage);
     };
-  }, [onTimeUpdate]);
+  }, [isClient, onTimeUpdate]);
 
   // On the server, and on the initial client render, render a placeholder.
   if (!isClient) {
