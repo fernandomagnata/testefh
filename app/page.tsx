@@ -1,6 +1,5 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import { 
   AberturaSection,
   IntroducaoSection,
@@ -20,41 +19,25 @@ import {
 import { FloatingCtaButton } from '@/app/components/shared/floating-cta-button';
 
 export default function Home() {
-  const [showContent, setShowContent] = useState(false);
-
-  useEffect(() => {
-    // Inicia um temporizador para mostrar o conteúdo após 4 minutos e 35 segundos.
-    const timer = setTimeout(() => {
-      setShowContent(true);
-    }, 275000); // 275000 milissegundos = 4 minutos e 35 segundos
-
-    // Limpa o temporizador se o componente for desmontado antes do tempo.
-    return () => clearTimeout(timer);
-  }, []); // O array de dependências vazio garante que isso rode apenas uma vez.
-
   return (
     <div className="flex flex-col items-center overflow-x-hidden">
       <main className="w-full max-w-6xl px-4 md:px-8 flex flex-col gap-24 md:gap-32 py-16 md:py-24">
         <AberturaSection />
-        {showContent && (
-          <>
-            <IntroducaoSection />
-            <SituacoesSection />
-            <ProblemaSolucaoSection />
-            <PersuasaoOcultaSection />
-            <ResultadosSection />
-            <ModulosSection />
-            <OfertaSection />
-            <DepoimentosSection />
-            <BonusSection />
-            <PerguntasRespostasSection />
-            <GarantiaSection />
-            <FinalCtaSection />
-          </>
-        )}
+        <IntroducaoSection />
+        <SituacoesSection />
+        <ProblemaSolucaoSection />
+        <PersuasaoOcultaSection />
+        <ResultadosSection />
+        <ModulosSection />
+        <OfertaSection />
+        <DepoimentosSection />
+        <BonusSection />
+        <PerguntasRespostasSection />
+        <GarantiaSection />
+        <FinalCtaSection />
       </main>
       <FooterSection />
-      <FloatingCtaButton isVisible={showContent} />
+      <FloatingCtaButton isVisible={true} />
     </div>
   );
 }

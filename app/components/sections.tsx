@@ -738,5 +738,3 @@ export function FooterSection() {
     </footer>
   );
 }
-
-    
