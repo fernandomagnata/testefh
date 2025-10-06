@@ -1,6 +1,5 @@
 'use client';
 
-import { useEffect } from 'react';
 import { ArrowUp } from 'lucide-react';
 import { Button } from '@/app/components/ui';
 import { cn } from '@/app/lib/utils';
