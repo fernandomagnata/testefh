@@ -1,7 +1,7 @@
 'use client';
 
 import VturbPlayer from "./VturbPlayer";
-import VturbPlayer2 from "./VturbPlayer2";
+import VturbPlayerNew from "./VturbPlayerNew";
 import Link from "next/link";
 import Image from 'next/image';
 import type { QAItem } from "@/app/lib/utils";
@@ -110,7 +110,7 @@ export function DepoimentosSection() {
           Veja o depoimento do Rafael, que saiu da friendzone eterna e conquistou a atenção que sempre quis em menos de 14 dias usando o método.
         </p>
         <div className="mt-8 w-full max-w-2xl mx-auto aspect-video bg-card rounded-lg border border-primary/20 flex items-center justify-center shadow-lg overflow-hidden">
-           <VturbPlayer2 />
+           <VturbPlayerNew />
         </div>
       </div>
 
