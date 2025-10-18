@@ -13,9 +13,9 @@ import {
   BonusSection,
   PerguntasRespostasSection,
   GarantiaSection,
-  FinalCtaSection,
-  FooterSection
+  FinalCtaSection
 } from '@/app/components/sections';
+import { FooterSection } from '@/app/components/sections/footer';
 import { FloatingCtaButton } from '@/app/components/shared/floating-cta-button';
 
 export default function Home() {
@@ -37,7 +37,7 @@ export default function Home() {
         <FinalCtaSection />
       </main>
       <FooterSection />
-      <FloatingCtaButton isVisible={true} />
+      <FloatingCtaButton />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { Button } from '@/app/components/ui';
-import { FooterSection } from '@/app/components/sections';
+import { FooterSection } from '@/app/components/sections/footer';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
@@ -19,7 +19,7 @@ export default function PoliticaDePrivacidadePage() {
           <h1 className="text-4xl md:text-5xl font-extrabold text-primary text-center">Política de Privacidade</h1>
         </div>
         <div className="space-y-8 text-muted-foreground">
-          <p>A sua privacidade é de extrema importância para nós. Esta Política de Privacidade descreve como Magnetismo Oculto ("nós", "nosso" ou "nossa") coleta, usa, compartilha e protege as suas informações pessoais quando você visita Magnetismo Oculto (o "Site"), utiliza os nossos services ou interage conosco de qualquer forma.</p>
+          <p>A sua privacidade é de extrema importância para nós. Esta Política de Privacidade descreve como Magnetismo Oculto ("nós", "nosso" ou "nossa") coleta, usa, compartilha e protege as suas informações pessoais quando você visita Magnetismo Oculto (o "Site"), utiliza os nossos serviços ou interage conosco de qualquer forma.</p>
           <p>Ao utilizar o nosso Site e os nossos serviços, você concorda com a coleta e o uso das suas informações de acordo com esta política.</p>
 
           <section>
