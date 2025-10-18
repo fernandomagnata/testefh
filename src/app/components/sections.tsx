@@ -303,8 +303,8 @@ export function IntroducaoSection() {
         <Image
           src="https://imgur.com/Xaaz0c3.png"
           alt="Homem e mulher conversando em um bar"
-          fill
-          style={{ objectFit: 'cover' }}
+          layout="fill"
+          objectFit="cover"
           data-ai-hint="couple talking"
           className="transform hover:scale-105 transition-transform duration-500 ease-in-out"
         />
@@ -395,8 +395,8 @@ export function OfertaSection() {
             <Image
               src="https://imgur.com/MFzEPpx.png"
               alt="Magnetismo Oculto - A Ciência da Atração Invisível"
-              fill
-              style={{ objectFit: 'contain' }}
+              layout="fill"
+              objectFit="contain"
               data-ai-hint="product mockup"
             />
           </div>
