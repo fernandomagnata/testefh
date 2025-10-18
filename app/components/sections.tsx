@@ -21,7 +21,7 @@ export function AberturaSection() {
       <div className="my-8 w-full max-w-3xl aspect-video bg-card rounded-lg border border-primary/20 overflow-hidden">
         <VturbPlayer />
       </div>
-      <Link href="https://payment.ticto.app/O37ED94FD" passHref>
+      <Link href="https://payment.ticto.app/O37ED94FD" passHref legacyBehavior>
         <a target="_blank" rel="noopener noreferrer">
           <Button size="lg" className="font-bold text-lg bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50">
             Comece Agora
@@ -237,7 +237,7 @@ Pare de adiar.`}
         <span>Clique agora e aprenda como conquistar a sua mulher dos sonhos:</span>
       </h3>
       
-      <Link href="https://payment.ticto.app/O37ED94FD" passHref>
+      <Link href="https://payment.ticto.app/O37ED94FD" passHref legacyBehavior>
         <a target="_blank" rel="noopener noreferrer">
           <Button size="lg" className="mt-8 h-16 w-full max-w-md font-bold text-2xl bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_35px_hsl(var(--primary))] shadow-[0_0_20px_hsl(var(--primary))] border-2 border-primary/50 rounded-lg">
             QUERO AGORA
@@ -427,7 +427,7 @@ export function OfertaSection() {
             </p>
           </div>
 
-          <Link href="https://payment.ticto.app/O37ED94FD" passHref>
+          <Link href="https://payment.ticto.app/O37ED94FD" passHref legacyBehavior>
             <a target="_blank" rel="noopener noreferrer">
               <Button 
                 size="lg" 
