@@ -20,7 +20,7 @@ export default function TermosDeUsoPage() {
         </div>
         <div className="space-y-8 text-muted-foreground">
           <p>Bem-vindo(a) ao Magnetismo Oculto ("Site"), operado por Magnetismo Oculto ("nós", "nosso" ou "nossa"). Estes Termos de Uso ("Termos") regem o seu acesso e uso do nosso Site, produtos e serviços.</p>
-          <p>Ao acessar ou usar nosso Site e nossos serviços, você concorda em estar vinculado a estes Termos. Se você não concordar com qualquer parte destes Termos, você não deve acessar o Site ou utilizar nossos serviços.</p>
+          <p>Ao acessar ou usar nosso Site e nossos services, você concorda em estar vinculado a estes Termos. Se você não concordar com qualquer parte destes Termos, você não deve acessar o Site ou utilizar nossos serviços.</p>
 
           <section>
             <h2 className="text-2xl font-bold text-foreground mb-4">1. Aceitação dos Termos</h2>
