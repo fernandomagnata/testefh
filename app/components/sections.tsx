@@ -21,10 +21,12 @@ export function AberturaSection() {
       <div className="my-8 w-full max-w-3xl aspect-video bg-card rounded-lg border border-primary/20 overflow-hidden">
         <VturbPlayer />
       </div>
-      <Link href="https://payment.ticto.app/O37ED94FD" target="_blank">
-        <Button size="lg" className="font-bold text-lg bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50">
-          Comece Agora
-        </Button>
+      <Link href="https://payment.ticto.app/O37ED94FD" passHref>
+        <a target="_blank" rel="noopener noreferrer">
+          <Button size="lg" className="font-bold text-lg bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50">
+            Comece Agora
+          </Button>
+        </a>
       </Link>
     </section>
   );
@@ -235,10 +237,12 @@ Pare de adiar.`}
         <span>Clique agora e aprenda como conquistar a sua mulher dos sonhos:</span>
       </h3>
       
-      <Link href="https://payment.ticto.app/O37ED94FD" target="_blank">
-        <Button size="lg" className="mt-8 h-16 w-full max-w-md font-bold text-2xl bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_35px_hsl(var(--primary))] shadow-[0_0_20px_hsl(var(--primary))] border-2 border-primary/50 rounded-lg">
-          QUERO AGORA
-        </Button>
+      <Link href="https://payment.ticto.app/O37ED94FD" passHref>
+        <a target="_blank" rel="noopener noreferrer">
+          <Button size="lg" className="mt-8 h-16 w-full max-w-md font-bold text-2xl bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_35px_hsl(var(--primary))] shadow-[0_0_20px_hsl(var(--primary))] border-2 border-primary/50 rounded-lg">
+            QUERO AGORA
+          </Button>
+        </a>
       </Link>
 
       <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6 text-sm text-muted-foreground">
@@ -423,13 +427,15 @@ export function OfertaSection() {
             </p>
           </div>
 
-          <Link href="https://payment.ticto.app/O37ED94FD" target="_blank">
-            <Button 
-              size="lg" 
-              className="mt-10 h-auto px-12 py-4 bg-primary text-primary-foreground text-lg font-bold rounded-lg transition-all duration-300 ease-in-out hover:bg-primary/90 hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50"
-            >
-              EU QUERO
-            </Button>
+          <Link href="https://payment.ticto.app/O37ED94FD" passHref>
+            <a target="_blank" rel="noopener noreferrer">
+              <Button 
+                size="lg" 
+                className="mt-10 h-auto px-12 py-4 bg-primary text-primary-foreground text-lg font-bold rounded-lg transition-all duration-300 ease-in-out hover:bg-primary/90 hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50"
+              >
+                EU QUERO
+              </Button>
+            </a>
           </Link>
         </div>
       </div>
