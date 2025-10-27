@@ -8,13 +8,11 @@ export default function TermosDeUsoPage() {
     <div className="flex flex-col items-center min-h-screen">
       <main className="w-full max-w-4xl px-4 md:px-8 flex-grow flex flex-col gap-8 py-16 md:py-24">
         <div className="flex items-center justify-center relative mb-6">
-            <Link href="/" legacyBehavior>
-              <a className="absolute left-0">
-                <Button variant="outline">
+            <Link href="/">
+                <Button variant="outline" className="absolute left-0">
                   <ArrowLeft className="mr-2 h-4 w-4" />
                   Voltar
                 </Button>
-              </a>
             </Link>
             <h1 className="text-4xl md:text-5xl font-extrabold text-primary text-center">Termos de Uso</h1>
         </div>
@@ -113,5 +111,3 @@ export default function TermosDeUsoPage() {
     </div>
   );
 }
-
-    

@@ -25,27 +25,6 @@ export default function RootLayout({
         <link rel="apple-touch-icon" sizes="180x180" href="https://imgur.com/DOgvSRt.png?v=1" />
         <link rel="icon" type="image/png" sizes="32x32" href="https://imgur.com/DOgvSRt.png?v=1" />
         <link rel="icon" type="image/png" sizes="16x16" href="https://imgur.com/DOgvSRt.png?v=1" />
-
-
-        {/* Scripts externos com melhor performance */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.pixelId = "6877de3c73930aaed23043b5";
-              var a = document.createElement("script");
-              a.setAttribute("async", "");
-              a.setAttribute("defer", "");
-              a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-              document.head.appendChild(a);
-
-              src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-              data-utmify-prevent-xcod-sck
-              data-utmify-prevent-subids
-              async
-              defer
-            `,
-          }}
-        />
         
         <script 
           src="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/sdk.js" 
