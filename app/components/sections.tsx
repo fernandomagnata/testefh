@@ -13,21 +13,19 @@ export function AberturaSection() {
   return (
     <section className="text-center flex flex-col items-center">
       <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-primary/70 pb-4">
-        Transforme-se no homem que as mulheres desejam, mesmo sem dizer uma palavra.
+        Seja o homem que desperta desejo sem precisar correr atrás dela.
       </h1>
       <p className="mt-4 max-w-2xl text-lg md:text-xl text-muted-foreground">
-        Descubra o que transforma homens invisíveis em magnetos de atração feminina em menos de 21 dias.
+        Descubra o sistema que faz qualquer mulher notar sua presença, sentir atração por você e buscar sua atenção.
       </p>
       <div className="my-8 w-full max-w-3xl aspect-video bg-card rounded-lg border border-primary/20 overflow-hidden">
         <VturbPlayer />
       </div>
-      <Link href="https://payment.ticto.app/O37ED94FD" passHref legacyBehavior>
-        <a target="_blank" rel="noopener noreferrer">
-          <Button size="lg" className="font-bold text-lg bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50">
-            Comece Agora
-          </Button>
-        </a>
-      </Link>
+      <a href="https://payment.ticto.app/O37ED94FD" target="_blank" rel="noopener noreferrer">
+        <Button size="lg" className="font-bold text-lg bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50">
+          Comece Agora
+        </Button>
+      </a>
     </section>
   );
 }
@@ -237,13 +235,11 @@ Pare de adiar.`}
         <span>Clique agora e aprenda como conquistar a sua mulher dos sonhos:</span>
       </h3>
       
-      <Link href="https://payment.ticto.app/O37ED94FD" passHref legacyBehavior>
-        <a target="_blank" rel="noopener noreferrer">
-          <Button size="lg" className="mt-8 h-16 w-full max-w-md font-bold text-2xl bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_35px_hsl(var(--primary))] shadow-[0_0_20px_hsl(var(--primary))] border-2 border-primary/50 rounded-lg">
-            QUERO AGORA
-          </Button>
-        </a>
-      </Link>
+      <a href="https://payment.ticto.app/O37ED94FD" target="_blank" rel="noopener noreferrer">
+        <Button size="lg" className="mt-8 h-16 w-full max-w-md font-bold text-2xl bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_35px_hsl(var(--primary))] shadow-[0_0_20px_hsl(var(--primary))] border-2 border-primary/50 rounded-lg">
+          QUERO AGORA
+        </Button>
+      </a>
 
       <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6 text-sm text-muted-foreground">
         <div className="flex items-center gap-2">
@@ -427,16 +423,14 @@ export function OfertaSection() {
             </p>
           </div>
 
-          <Link href="https://payment.ticto.app/O37ED94FD" passHref legacyBehavior>
-            <a target="_blank" rel="noopener noreferrer">
-              <Button 
-                size="lg" 
-                className="mt-10 h-auto px-12 py-4 bg-primary text-primary-foreground text-lg font-bold rounded-lg transition-all duration-300 ease-in-out hover:bg-primary/90 hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50"
-              >
-                EU QUERO
-              </Button>
-            </a>
-          </Link>
+          <a href="https://payment.ticto.app/O37ED94FD" target="_blank" rel="noopener noreferrer">
+            <Button 
+              size="lg" 
+              className="mt-10 h-auto px-12 py-4 bg-primary text-primary-foreground text-lg font-bold rounded-lg transition-all duration-300 ease-in-out hover:bg-primary/90 hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50"
+            >
+              EU QUERO
+            </Button>
+          </a>
         </div>
       </div>
     </section>
