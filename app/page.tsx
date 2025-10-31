@@ -37,7 +37,7 @@ export default function Home() {
         <FinalCtaSection />
       </main>
       <FooterSection />
-      <FloatingCtaButton isVisible={true} />
+      <FloatingCtaButton />
     </div>
   );
 }
