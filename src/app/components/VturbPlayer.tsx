@@ -10,7 +10,7 @@ export default function VturbPlayer() {
       setIsClient(true);
     }, []);
 
-    // On the server, return null to avoid rendering mismatch
+    // On the server, and on the initial client render, return null to avoid a mismatch.
     if (!isClient) {
       return null;
     }
