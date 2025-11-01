@@ -32,7 +32,7 @@ export default function RootLayout({
           async 
           defer 
         />
-        
+
         {/* Meta Pixel Code */}
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
@@ -48,16 +48,12 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
+        {/* End Meta Pixel Code */}
       </head>
       <body className="font-body antialiased" suppressHydrationWarning={true}>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: 'none' }}
-            src="https://www.facebook.com/tr?id=738618361889095&ev=PageView&noscript=1"
-          />
-        </noscript>
+        <noscript><img height="1" width="1" style={{display: 'none'}}
+          src="https://www.facebook.com/tr?id=738618361889095&ev=PageView&noscript=1"
+        /></noscript>
         {children}
         <Toaster />
       </body>
