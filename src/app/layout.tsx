@@ -32,9 +32,8 @@ export default function RootLayout({
           async 
           defer 
         />
-
-        {/* Utmify Pixel Loader */}
-        <Script id="utmify-pixel-loader" strategy="afterInteractive">
+        
+        <Script id="utmify-pixel" strategy="afterInteractive">
           {`
             window.pixelId = "6877de3c73930aaed23043b5";
             var a = document.createElement("script");
@@ -44,18 +43,15 @@ export default function RootLayout({
             document.head.appendChild(a);
           `}
         </Script>
-
-        {/* Utmify UTMS */}
         <Script
-          id="utmify-utms"
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
           data-utmify-prevent-xcod-sck
           data-utmify-prevent-subids
+          async
+          defer
           strategy="afterInteractive"
-        />
-
-        {/* Meta Pixel Code */}
-        <Script id="meta-pixel-code" strategy="afterInteractive">
+        ></Script>
+        <Script id="meta-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -72,9 +68,12 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased" suppressHydrationWarning={true}>
         <noscript>
-          <img height="1" width="1" style={{display: 'none'}}
-            src="https://www.facebook.com/tr?id=738618361889095&ev=PageView&noscript=1"
-          />
+            <img
+                height="1"
+                width="1"
+                style={{ display: 'none' }}
+                src="https://www.facebook.com/tr?id=738618361889095&ev=PageView&noscript=1"
+            />
         </noscript>
         {children}
         <Toaster />
