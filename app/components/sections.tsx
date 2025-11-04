@@ -20,10 +20,10 @@ export function AberturaSection() {
   return (
     <section className="text-center flex flex-col items-center">
       <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-primary/70 pb-4">
-        Seja o homem que desperta desejo sem precisar correr atrás dela.
+        Transforme-se no homem que as mulheres desejam, mesmo sem dizer uma palavra.
       </h1>
       <p className="mt-4 max-w-2xl text-lg md:text-xl text-muted-foreground">
-        Descubra o sistema que faz qualquer mulher notar sua presença, sentir atração por você e buscar sua atenção.
+        Descubra o que transforma homens invisíveis em magnetos de atração feminina em menos de 21 dias.
       </p>
       <div className="my-8 w-full max-w-3xl aspect-video bg-card rounded-lg border border-primary/20 overflow-hidden">
         <VturbPlayer />
@@ -426,10 +426,13 @@ export function OfertaSection() {
           </div>
           
           <div className="mt-12">
-            <p className="text-lg text-neutral-400">De <span className="line-through">R$ 294,00</span> Por apenas</p>
-            <p className="text-7xl md:text-8xl font-bold text-primary my-2">
-              R$ 37,90
+            <p className="text-lg text-neutral-400">
+                De <span className="line-through">R$ 294,00</span> e <span className="text-red-500 line-through">R$ 37,90</span> Por apenas
             </p>
+            <p className="text-7xl md:text-8xl font-bold text-primary my-2">
+              R$ 16,90
+            </p>
+            <p className="text-md text-neutral-400">Sua última chance</p>
           </div>
 
           <a href="https://payment.ticto.app/O37ED94FD" target="_blank" rel="noopener noreferrer">
