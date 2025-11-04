@@ -244,7 +244,7 @@ Pare de adiar.`}
         <span>Clique agora e aprenda como conquistar a sua mulher dos sonhos:</span>
       </h3>
       
-      <a href="https://payment.ticto.app/O37ED94FD" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.ggcheckout.com/checkout/v2/1dAYZZfDtOlDp1Nhx9GK" target="_blank" rel="noopener noreferrer">
         <Button size="lg" className="mt-8 h-16 w-full max-w-md font-bold text-2xl bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_35px_hsl(var(--primary))] shadow-[0_0_20px_hsl(var(--primary))] border-2 border-primary/50 rounded-lg">
           QUERO AGORA
         </Button>
@@ -435,7 +435,7 @@ export function OfertaSection() {
             <p className="text-md text-neutral-400">Sua última chance</p>
           </div>
 
-          <a href="https://payment.ticto.app/O37ED94FD" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.ggcheckout.com/checkout/v2/1dAYZZfDtOlDp1Nhx9GK" target="_blank" rel="noopener noreferrer">
             <Button 
               size="lg" 
               className="mt-10 h-auto px-12 py-4 bg-primary text-primary-foreground text-lg font-bold rounded-lg transition-all duration-300 ease-in-out hover:bg-primary/90 hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50"
@@ -750,3 +750,5 @@ export function FooterSection() {
     </footer>
   );
 }
+
+    
