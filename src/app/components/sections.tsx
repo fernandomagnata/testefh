@@ -10,6 +10,13 @@ import { BrainCircuit, Users, BookOpen, Gift, ShieldCheck, Package, XCircle, Che
 import { Button, Card, CardContent, CardHeader, CardTitle, CardDescription, Avatar, AvatarFallback, AvatarImage, Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/app/components/ui";
 
 export function AberturaSection() {
+  const scrollToOffer = () => {
+    const offerSection = document.getElementById('oferta');
+    if (offerSection) {
+      offerSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
   return (
     <section className="text-center flex flex-col items-center">
       <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-white to-primary/70 pb-4">
@@ -21,11 +28,14 @@ export function AberturaSection() {
       <div className="my-8 w-full max-w-3xl aspect-video bg-card rounded-lg border border-primary/20 overflow-hidden">
         <VturbPlayer />
       </div>
-      <Link href="https://payment.ticto.app/O37ED94FD" target="_blank" rel="noopener noreferrer">
-        <Button size="lg" className="font-bold text-lg bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50">
+      <a href="https://www.ggcheckout.com/checkout/v2/1dAYZZfDtOlDp1Nhx9GK" target="_blank" rel="noopener noreferrer" >
+        <Button
+          size="lg"
+          className="font-bold text-lg bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50"
+        >
           Comece Agora
         </Button>
-      </Link>
+      </a>
     </section>
   );
 }
@@ -235,11 +245,11 @@ Pare de adiar.`}
         <span>Clique agora e aprenda como conquistar a sua mulher dos sonhos:</span>
       </h3>
       
-      <Link href="https://payment.ticto.app/O37ED94FD" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.ggcheckout.com/checkout/v2/1dAYZZfDtOlDp1Nhx9GK" target="_blank" rel="noopener noreferrer">
         <Button size="lg" className="mt-8 h-16 w-full max-w-md font-bold text-2xl bg-gradient-to-r from-primary to-purple-600 text-primary-foreground transition-all duration-300 ease-in-out hover:shadow-[0_0_35px_hsl(var(--primary))] shadow-[0_0_20px_hsl(var(--primary))] border-2 border-primary/50 rounded-lg">
           QUERO AGORA
         </Button>
-      </Link>
+      </a>
 
       <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6 text-sm text-muted-foreground">
         <div className="flex items-center gap-2">
@@ -417,24 +427,23 @@ export function OfertaSection() {
           </div>
           
           <div className="mt-12">
-            <p className="text-lg text-neutral-400">De <span className="line-through">R$ 294,00</span> Por apenas</p>
-            <p className="text-7xl md:text-8xl font-bold text-primary my-2">
-              R$ 37,90
+            <p className="text-lg text-neutral-400">
+                De <span className="line-through">R$ 294,00</span> e <span className="text-red-500 line-through">R$ 37,90</span> Por apenas
             </p>
+            <p className="text-7xl md:text-8xl font-bold text-primary my-2">
+              R$ 16,90
+            </p>
+            <p className="text-md text-neutral-400">Sua última chance</p>
           </div>
 
-          <Link
-            href="https://payment.ticto.app/O37ED94FD"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://www.ggcheckout.com/checkout/v2/1dAYZZfDtOlDp1Nhx9GK" target="_blank" rel="noopener noreferrer">
             <Button 
               size="lg" 
               className="mt-10 h-auto px-12 py-4 bg-primary text-primary-foreground text-lg font-bold rounded-lg transition-all duration-300 ease-in-out hover:bg-primary/90 hover:shadow-[0_0_25px_hsl(var(--primary))] shadow-[0_0_15px_hsl(var(--primary))] border-2 border-primary/50"
             >
               EU QUERO
             </Button>
-          </Link>
+          </a>
         </div>
       </div>
     </section>
@@ -713,6 +722,33 @@ export function SituacoesSection() {
         <p className="font-semibold text-primary">Enquanto você fica na sua, outros homens estão levando as mulheres que você quer.</p>
       </div>
     </section>
+  );
+}
+
+export function FooterSection() {
+  return (
+    <footer className="w-full bg-background py-8">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-2 text-center text-sm text-muted-foreground">
+        <p>Magnetismo Oculto © 2025</p>
+        <div className="flex justify-center gap-2">
+          <Link href="/politica-de-privacidade" className="hover:text-primary transition-colors">
+            Política de Privacidade
+          </Link>
+          <span>|</span>
+          <Link href="/termos-de-uso" className="hover:text-primary transition-colors">
+            Termos de Uso
+          </Link>
+        </div>
+      </div>
+      <div className="container mx-auto max-w-5xl text-center text-xs text-muted-foreground/70 mt-8 space-y-4 px-4">
+        <p>
+          ESTE SITE NÃO É do FACEBOOK: Este site não faz parte do site do Facebook ou do Facebook Inc. Além disso, este site NÃO é endossado pelo Facebook de nenhuma maneira. FACEBOOK é uma marca comercial independente da FACEBOOK, Inc.
+        </p>
+        <p>
+          Os resultados referentes ao serviço foram avaliados e comprovados por nossos clientes. Não garantimos os resultados iguais para todos, estes variam de pessoa para pessoa dependendo de diversos fatores individuais. As informações fornecidas neste site destina-se ao seu conhecimento geral e não garantimos um resultado específico, todo resultado será de inteira responsabilidade do cliente. Essa página/produto não tem vínculo com o Facebook.
+        </p>
+      </div>
+    </footer>
   );
 }
 
